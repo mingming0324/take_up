@@ -73,6 +73,25 @@ a {
   width: 100%;
   display: block;
 }
+
+.text-wrap {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.text-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-name {
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+
  /* 라이브러리 끝 */
 
 /* 컬러칩 */
@@ -105,24 +124,16 @@ html {
 }
 
 .sec-1_text-wrap {
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 30px;
-  height: 100%;
 }
 
 .sec-1_text-wrap .overView {
   color: var(--color-main);
-  font-size: 16px;
-  font-weight: 600;
-  display: inline-block;
+
 }
 
 .sec-1_text-wrap .sec-1_text-box {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   gap: 28px;
 }
 
@@ -154,6 +165,59 @@ html {
   /* <!-- 백그라운드 끝 --> */
 
   /* <!-- 데스크 리서치 시작 --> */
+  .sec-3 {
+    height: 1190px;
+    background-color: var(--color-background);
+  }
+  
+  .sec-3_text-wrap {
+    justify-content: center;
+    gap: 28px;
+    height: 414px;
+  }
+  
+  .sec-3_text-wrap .desk-research {
+    color: var(--color-D9);
+  }
+  
+  .sec-3_text-wrap .sec-3_text-box {
+    gap: 16px;
+  }
+  
+  .sec-3_text-wrap .sec-3_text-box .desk-re_title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-main);
+  }
+  
+  .sec-3_text-wrap .sec-3_text-box .desk-re_text {
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 26px;
+    color: var(--color-f0);
+  }
+
+  .sec-3_img-wrap {
+    height: 437px;
+  }
+
+  .sec-3_img-wrap .desk-re_img-box {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 42px;
+  }
+
+  .sec-3_img-wrap .desk-re_img-box .img1 {
+    width: 768px;
+    height: 437px;
+  }
+
+  .sec-3_img-wrap .desk-re_img-box .img2 {
+    width: 770px;
+    height: 437px;
+  }
   /* <!-- 데스크 리서치 끝 --> */
 
   /* <!-- 유저 리서치 시작 --> */
