@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'Pretendard-Regular';
+  font-family: 'Pretendard-bold';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
 }
 @font-face {
-  font-family: 'Pretendard-Regular';
+  font-family: 'Pretendard-semibold';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Pretendard-Regular';
+  font-family: 'Pretendard-medium';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
 }
 
 @font-face {
@@ -27,7 +27,9 @@
 /* 노말라이즈 */
 body,
 ul,
-li {
+li,
+h1, h2, h3, h4,
+p {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -61,25 +63,6 @@ a {
   display: flex;
 }
 
-.flex-jc-c {
-  justify-content: center;
-}
-
-.flex-ai-c {
-  align-items: center;
-}
-
-.flex-as-c {
-  align-self: center;
-}
-
-.flex-grow-1 {
-  flex-grow: 1;
-}
-
-.block {
-  display: block;
-}
 .con {
   margin-left: auto;
   margin-right: auto;
@@ -98,6 +81,7 @@ a {
     --color-background: #2E2F34;
     --color-fff: #FFF;
     --color-f0: #f0f0f0;
+    --color-111: #111;
     --color-4B: #4B4B4B;
     --color-text: #555;
     --color-84: #848484;
@@ -106,10 +90,64 @@ a {
     --color-D9: #D9D9D9;
 }
 /* 컬러칩 끝 */
+
+/* 커스텀 */
+html {
+  font-family: 'Pretendard-Regular';
+}
+
 /* <!-- 메인페이지 시작 --> */
 /* <!-- 메인페이지 끝 --> */
 
 /* <!-- 오버뷰 시작 --> */
+.sec-1 {
+  height: 650px;
+}
+
+.sec-1_text-wrap {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+}
+
+.sec-1_text-wrap .overView {
+  color: var(--color-main);
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.sec-1_text-wrap .sec-1_text-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.sec-1_text-wrap .sec-1_text-box .overView_title {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-111);
+}
+
+.sec-1_text-wrap .sec-1_text-box .overView_text {
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 26px;
+  color: var(--color-text);
+}
+
+.timeline_wrap {
+  overflow: hidden;
+}
+
+.create {
+  transform: translateY(100%);
+  opacity: 0;
+}
  /* <!-- 오버뷰 끝 --> */
 
  /* <!-- 백그라운드 시작 --> */
