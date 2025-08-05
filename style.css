@@ -197,9 +197,17 @@ html {
     line-height: 26px;
     color: var(--color-f0);
   }
-
   .sec-3_img-wrap {
+    position: relative;
     height: 437px;
+  }
+
+  .sec-3 .back-img {
+    position: absolute;
+    top: 1380px;
+    left: 50%;
+    transform: translateX(-50%);
+    
   }
 
   .sec-3_img-wrap .desk-re_img-box {
