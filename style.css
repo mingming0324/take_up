@@ -92,7 +92,6 @@ a {
   display: inline-block;
 }
 
-
 .create, .create_1,   .create_2,   .create_3 {
   transform: translateY(-100%);
   opacity: 0;
@@ -165,7 +164,33 @@ html {
 
  /* <!-- 백그라운드 시작 --> */
  .sec-2 {
-  height: 950px;
+  height: 1386px;
+ }
+
+ .sec-2 .sec-2_text-wrap {
+  justify-content: center;
+  height: 378px;
+  gap: 28px;
+ }
+
+ .sec-2 .sec-2_text-wrap .background {
+  color: var(--color-4B);
+ }
+
+ .sec-2 .sec-2_text-wrap .sec-2_text-box {
+  gap: 8px;
+ }
+
+ .sec-2 .sec-2_text-wrap .background_text {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--color-text);
+ }
+
+ .sec-2 .sec-2_text-wrap .background_title {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--color-main);
  }
   /* <!-- 백그라운드 끝 --> */
 
