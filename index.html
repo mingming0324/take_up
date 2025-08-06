@@ -7,7 +7,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <!-- GSAP-SCROLL -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <!-- animate -->
+  <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
 </head>
@@ -16,7 +19,7 @@
   <!-- 메인페이지 끝 -->
 
   <!-- 오버뷰 시작 -->
-    <section class="sec-1 con border-red">
+    <section class="sec-1 con">
       <div class="sec-1_text-wrap text-wrap flex">
 
         <div class="timeline_wrap">
@@ -46,17 +49,18 @@
   <!-- 오버뷰 끝 -->
 
   <!-- 백그라운드 시작 -->
+   <section class="sec-2 con"></section>
     <!-- 백그라운드 끝 -->
 
     <!-- 데스크 리서치 시작 -->
-      <section class="sec-3 con border-green">
+      <section class="sec-3 con ">
           <div class="back-img">
             <img src="./imgs/deskReseach-img_3.png" alt="">
           </div>
         <div class="sec-3_text-wrap text-wrap flex">
 
           <div class="timeline_wrap">
-            <span class="desk-research title-name create">
+            <span class="desk-research title-name create_1">
               DESK RESREARCH
             </span>
           </div>
@@ -64,13 +68,13 @@
           <div class="sec-3_text-box text-box">
   
             <div class="timeline_wrap">
-              <h1 class="desk-re_title create">
+              <h1 class="desk-re_title create_1">
                 매일 주문하는데 왜 늘 불편할까?
               </h1>
             </div>
   
             <div class="timeline_wrap">
-              <p class="desk-re_text create">
+              <p class="desk-re_text create_1">
                 매일 마주하는 커피 주문 과정. 그 속엔 "익숙한 불편함"과 "제한된 선택지"가 숨어 있습니다. <br>
                 피로가 쌓이는 UX, 단절된 브랜드 경험, 우리는 그 반복적인 불편함 속에 사용자의 진짜 니즈를 발견합니다.
               </p>
@@ -80,14 +84,32 @@
 
         <div class="sec-3_img-wrap">
           <ul class="desk-re_img-box img-box flex">
-            <li>
+            <li class="create_2">
               <img class="img1" src="./imgs/deskReseach-img_1.png" alt="">
             </li>
-            <li>
+            <li class="create_2">
               <img class="img2" src="./imgs/deskReseach-img_2.png" alt="">
             </li>
           </ul>
+          <div class="desk-re_img-line">
+            <ul class="img-line flex">
+              <li class="create_3"><img src="./imgs/background_line.png" alt=""></li>
+              <li class="create_3"><img src="./imgs/background_line.png" alt=""></li>
+            </ul>
+          </div>
+
+          <div class="desk-re_sum-wrap">
+            <ul class="sum-box">
+              <li>
+                <span class="span span1">사용자 중심이 아닌 브랜드 중심 설계</span>
+              </li>
+              <li>
+                <span class="span span2">서비스 운영 구조의 결함</span>
+              </li>
+            </ul>
+          </div>
         </div>
+
       </section>
     <!-- 데스크 리서치 끝 -->
 

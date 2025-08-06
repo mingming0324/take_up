@@ -92,6 +92,11 @@ a {
   display: inline-block;
 }
 
+
+.create, .create_1,   .create_2,   .create_3 {
+  transform: translateY(-100%);
+  opacity: 0;
+}
  /* 라이브러리 끝 */
 
 /* 컬러칩 */
@@ -155,19 +160,20 @@ html {
   overflow: hidden;
 }
 
-.create {
-  transform: translateY(100%);
-  opacity: 0;
-}
+
  /* <!-- 오버뷰 끝 --> */
 
  /* <!-- 백그라운드 시작 --> */
+ .sec-2 {
+  height: 950px;
+ }
   /* <!-- 백그라운드 끝 --> */
 
   /* <!-- 데스크 리서치 시작 --> */
   .sec-3 {
     height: 1190px;
     background-color: var(--color-background);
+    position: relative;
   }
   
   .sec-3_text-wrap {
@@ -198,21 +204,20 @@ html {
     color: var(--color-f0);
   }
   .sec-3_img-wrap {
-    position: relative;
     height: 437px;
   }
 
   .sec-3 .back-img {
     position: absolute;
-    top: 1380px;
+    top: 729px;
     left: 50%;
     transform: translateX(-50%);
-    
   }
 
   .sec-3_img-wrap .desk-re_img-box {
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   height: 100%;
   gap: 42px;
   }
@@ -226,7 +231,60 @@ html {
     width: 770px;
     height: 437px;
   }
-  /* <!-- 데스크 리서치 끝 --> */
+
+  .sec-3_img-wrap .desk-re_img-line .img-line {
+    justify-content: center;
+    gap: 790px;
+    overflow: hidden;
+  }
+
+  .sec-3_img-wrap .desk-re_sum-wrap {
+    height: 150px;
+  }
+
+  .sec-3_img-wrap .desk-re_sum-wrap .sum-box {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    gap: 42px;
+  }
+
+  .sec-3_img-wrap .desk-re_sum-wrap .sum-box li {
+    margin-top: 72px;
+  }
+
+  .sec-3_img-wrap .desk-re_sum-wrap .sum-box span {
+    font-size: 24px;
+    color: var(--color-main);
+    font-weight: 700;
+    background-color: var(--color-f0);
+    border: 1px solid #FF4D4D;
+    border-radius: 50px;
+    opacity: 0;
+  }
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate__zoomIn {
+animation: zoomIn 1.2s ease-out  forwards;
+  }
+  .sec-3_img-wrap .desk-re_sum-wrap .sum-box .span1 {
+  padding: 28px 216px;
+  }
+
+  .sec-3_img-wrap .desk-re_sum-wrap .sum-box .span2 {
+    padding: 28px 272px;
+    }
+    /* <!-- 데스크 리서치 끝 --> */
 
   /* <!-- 유저 리서치 시작 --> */
   /* <!-- 유저 리서치 끝 --> */
