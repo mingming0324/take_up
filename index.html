@@ -9,6 +9,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- GSAP-SCROLL -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- animate -->
   <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="./style.css">
@@ -144,7 +147,7 @@
       <div class="sec-4_text-wrap text-wrap flex">
 
         <div class="timeline_wrap">
-          <span class="user-research title-name">
+          <span class="user-research title-name create_4">
             USER RESEARCH
           </span>
         </div>
@@ -152,14 +155,14 @@
         <div class="sec-4_text-box text-box">
 
           <div class="timeline_wrap">
-            <h1 class="user-re_title">
+            <h1 class="user-re_title create_4">
               불편한 사용성에 이탈하는 기존 사용자들
             </h1>
           </div>
 
           <div class="timeline_wrap">
-            <p class="user-re_text">
-              구글플레이 . 앱스토어 리뷰에서 조사한 결과 주문 실패와 서비스 이탈이 반복되며 복잡한 UI, 결제오류, 위치 오차, 느린 속도 등 <br>
+            <p class="user-re_text create_4">
+              구글플레이·앱스토어 리뷰에서 조사한 결과 주문 실패와 서비스 이탈이 반복되며 복잡한 UI, 결제오류, 위치 오차, 느린 속도 등 <br>
               다양한 요소로 인해 사용자 불편이 누적되고 있습니다.
             </p>
           </div>
@@ -169,7 +172,8 @@
 
       <div class="sec-4_contents-wrap">
         <ul class="user-re_content-box flex">
-          <li class="user-re_content-item">
+          <li class="user-re_content-item " data-aos="fade-up"
+          data-aos-delay="1100" data-aos-duration="600">
             <div class="user-re_content-item-box flex">
               <span class="user-re_item-title">
                 문제점 1
@@ -181,26 +185,28 @@
             </div>
           </li>
 
-          <li class="user-re_content-item">
+          <li class="user-re_content-item " data-aos="fade-up"
+          data-aos-delay="1300" data-aos-duration="800">
             <div class="user-re_content-item-box flex">
               <span class="user-re_item-title">
                 문제점 2
               </span>
               <p class="user-re_item-text">
-                쿠폰 등록 사용이 어렵고 결제창 오류로 <br>
+                쿠폰 등록·사용이 어렵고 결제창 오류로 <br>
                 주문이 정상적으로 완료되지 않음
                 </p>
             </div>
           </li>
 
-          <li class="user-re_content-item">
+          <li class="user-re_content-item " data-aos="fade-up"
+          data-aos-delay="1500" data-aos-duration="1000">
             <div class="user-re_content-item-box flex">
               <span class="user-re_item-title">
                 문제점 3
               </span>
-              <p class="user-re_item-text">
+              <p class="user-re_item-text user-re_item-text-3">
                 긴 대기 시간 실시간 대기 인원 미표시 <br>
-                부정확한 매장 위치 등 정보 제공의 부정확성
+                부정확한 매장 위치 등 정보 제공 부정확
                 </p>
             </div>
           </li>
