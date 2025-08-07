@@ -8,7 +8,7 @@ let tl = gsap.timeline({
     start: "top 85%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
     toggleActions: "play none none none" ,
     // └ 스크롤 방향과 관계없이 1번만 재생
-    markers: true // 화면에 start/end 위치 보이게 함
+    // markers: true // 화면에 start/end 위치 보이게 함
   },
   
   defaults: {
@@ -33,7 +33,7 @@ let tl_2 = gsap.timeline({
     trigger: ".sec-3",       
     start: "top 60%",      
     toggleActions: "play none none none" ,     
-    markers: true 
+    // markers: true 
   },
   
   defaults: {

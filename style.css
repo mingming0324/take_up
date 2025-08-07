@@ -199,6 +199,7 @@ html {
     height: 1190px;
     background-color: var(--color-background);
     position: relative;
+    overflow: hidden;
   }
   
   .sec-3_text-wrap {
@@ -232,11 +233,12 @@ html {
     height: 437px;
   }
 
-  .sec-3 .back-img {
+  .sec-3 .desk-re_back-img img {
     position: absolute;
-    top: 729px;
+    top: 62%;
     left: 50%;
     transform: translateX(-50%);
+    width: 2074px;
   }
 
   .sec-3_img-wrap .desk-re_img-box {
@@ -312,6 +314,87 @@ animation: zoomIn 1.2s ease-out  forwards;
     /* <!-- 데스크 리서치 끝 --> */
 
   /* <!-- 유저 리서치 시작 --> */
+  .sec-4 {
+    height: 1004px;
+    background-color: var(--color-background);
+    background-image: url(./imgs/user-re_img1.png);
+    background-size: cover;
+    background-position: 50% -50%;
+    background-repeat: no-repeat;
+  }
+
+  .sec-4_text-wrap {
+    justify-content: center;
+    height: 414px;
+    gap: 28px;
+  }
+
+  .sec-4_text-wrap .user-research {
+    color: var(--color-f0);
+  }
+
+  .sec-4_text-wrap .sec-4_text-box {
+    gap: 16px;
+  }
+
+  .sec-4_text-wrap .sec-4_text-box .user-re_title {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--color-fff);
+  }
+
+  .sec-4_text-wrap .sec-4_text-box .user-re_text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-D9);
+  }
+
+  .sec-4_contents-wrap {
+    height: calc(1004px - 414px);
+  }
+
+  .sec-4_contents-wrap .user-re_content-box {
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+  }
+
+  .sec-4_contents-wrap .user-re_content-box .user-re_content-item-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    background-color: rgba(28, 28, 28, .6);
+    border-radius: 14px;
+    padding: 65px 66px;
+  }
+
+  .sec-4_contents-wrap .user-re_content-box .user-re_item-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-f0);
+    background-color: var(--color-main);
+    border-radius: 14px;
+    padding: 20px 54px;
+    width: 70px;
+    text-align: center;
+  }
+
+  .sec-4_contents-wrap .user-re_content-box .user-re_item-text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    color: var(--color-D9);
+    text-align: center;
+  }
+
+  .sec-4 .user-re_back-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
   /* <!-- 유저 리서치 끝 --> */
 
   /* <!-- 페르소나 시작 --> */
