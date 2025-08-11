@@ -127,6 +127,90 @@ html {
 }
 
 /* <!-- 메인페이지 시작 --> */
+.main {
+  height: 1078px;
+  padding: 86px 150px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.main_text-wrap {
+  flex-direction: column;
+  gap: 295px;
+}
+
+.main_text-wrap .main-name {
+  color: var(--color-main);
+}
+
+.main_text-wrap .main_text-box {
+  flex-direction: column;
+  gap: 265px;
+}
+
+.main_text-wrap .main_text-box .main_text {
+  color: var(--color-main);
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 14px;
+}
+
+.main_text-wrap .main_project-text li {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-main);
+}
+
+.main_text-wrap .main_project-text li:last-child {
+  margin-top: 10px;
+}
+
+.main_text-wrap .main_project-text .Project {
+  margin-right: 85px;
+}
+
+.main_text-wrap .main_project-text .Period {
+  margin-right: 90px;
+}
+
+/* .main_img-wrap .main_img-box .main-p img {
+  height: 732px;
+}
+
+.main_img-wrap .main_img-box .main-s img {
+  width: 566px;
+} */
+
+.main_img-wrap .main_img-box {
+  margin-left: 330PX;
+  margin-top: 50px;
+  position: relative;
+}
+
+
+.main_img-wrap .main_img-box .main_img-phone img {
+  width: 720px;
+}
+
+.main_img-wrap .main_img-box .shadow img {
+  width:720PX;
+}
+
+.main_img-wrap .main_img-box .shadow{
+  position: absolute;
+  z-index: -1;
+  top: 770px;
+  left: 60px;
+  /* top: 855px;
+  left: 1200px; */
+}
+
+.main_back-img {
+  position: absolute;
+  top: 350px;
+  left: 880px;
+}
 /* <!-- 메인페이지 끝 --> */
 
 /* <!-- 오버뷰 시작 --> */
@@ -520,6 +604,7 @@ animation: zoomIn 1.2s ease-out  forwards;
    /* <!-- 저니맵 시작 --> */
    .sec-6 {
     height: calc(1219px + 1219px);
+    background-color: var(--color-background);
    }
    /* <!-- 저니맵 끝 --> */
 

@@ -124,7 +124,7 @@ tl_4.to(".create_5", {
 tl_4.to(".perso_content-item li:nth-child(1) .skill:nth-child(1) .dot", {
   left: "70%", // 1번 dot 목표 위치
   duration: .9
-}, "+=1") 
+}, "+=.5") 
 
 tl_4.to(".perso_content-item li:nth-child(1) .skill:nth-child(2) .dot", {
   left: "80%", // 2번 dot 목표 위치
