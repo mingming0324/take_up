@@ -91,6 +91,12 @@ a {
   font-weight: 600;
   display: inline-block;
 }
+
+.create_0 {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
 .create, .create_1, .create_4{
   transform: translateY(100%);
   opacity: 0;
@@ -210,6 +216,21 @@ html {
   position: absolute;
   top: 350px;
   left: 880px;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate__fadeInLeft {
+animation: fadeInLeft .5s ease-out  forwards;
 }
 /* <!-- 메인페이지 끝 --> */
 
@@ -605,7 +626,23 @@ animation: zoomIn 1.2s ease-out  forwards;
    .sec-6 {
     height: calc(1219px + 1219px);
     background-color: var(--color-background);
+    padding: 106px 0 140px 0;
+    box-sizing: border-box;
    }
+.j-map_img-box {
+  flex-direction: column;
+}
+
+.j-map_img-box .j-map_img1 {
+  margin-bottom: 132px;
+  margin-left: auto;
+}
+
+.j-map_img-box .j-map_img2 {
+  margin-top: 106px;
+  margin-right: auto;
+}
+
    /* <!-- 저니맵 끝 --> */
 
    /* <!-- 프로토타입 테스팅 시작 --> */

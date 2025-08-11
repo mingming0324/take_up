@@ -4,6 +4,39 @@ AOS.init({
 });
 // sec-1 overview 텍스트 애니메이션
 // GSAP 타임라인 생성: 모든 애니메이션에 기본적으로 ease를 "power4.out"으로 설정
+
+// 메인 애니메이션
+let main = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".main",       
+    start: "top 88%",      
+    toggleActions: "play none none none" ,     
+    // markers: true 
+  },
+  
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+main.to(".create_0", {
+  onComplete: () => {
+    // 여기서 .slideInUp 클래스 추가
+    const items = document.querySelectorAll(".create_0");
+
+    items.forEach(el => {
+      el.classList.add("animate__fadeInLeft"); // 👈 애니메이션 실행됨!
+    });
+  }
+});
+main.to(".create_4", {
+  y: '0%',          
+  duration: 1.2,    
+  stagger: 0.2,    
+  opacity: 1     
+}, "+=.7");
+
+
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-1",         // 이 섹션이 화면에 등장하면 애니메이션 시작
