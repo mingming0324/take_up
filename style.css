@@ -130,6 +130,28 @@ a {
 /* 커스텀 */
 html {
   font-family: 'Pretendard-Regular';
+
+  /* 스크롤바 커스텀 시작 */
+
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 5%;
+  background: var(--color-main);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e7e7e7;
+}
+.swiper-horizontal {
+  touch-action: auto;
+}
+/* 스크롤바 커스텀 끝 */
 }
 
 /* <!-- 메인페이지 시작 --> */
