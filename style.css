@@ -106,9 +106,6 @@ a {
   opacity: 0;
 }
 
-/* .create_5  {
-  transform: translateY(-30%);
-} */
  /* 라이브러리 끝 */
 
 /* 컬러칩 */
@@ -669,8 +666,51 @@ animation: zoomIn 1.2s ease-out  forwards;
 
    /* <!-- 프로토타입 테스팅 시작 --> */
    .sec-7 {
-    height: calc(1565px * 3);
+    height: calc(1464px + 1132px + 1132px);
+    background-color: var(--color-background);
+    box-sizing: border-box;
+    padding: 160px 180px 120px 180px;
    }
+   .sec-7_text-wrap {
+    gap: 28px;
+    height: calc(108px + 144px);
+   }
+
+   .sec-7_text-wrap .Usability-Testing {
+    color: var(--color-f0);
+    font-size: 16px;
+    font-weight: 600;
+   }
+
+   .sec-7_text-wrap .sec-7_text-box {
+    gap: 16px;
+   }
+
+   .sec-7_text-wrap .sec-7_text-box .usab-te_title {
+    color: var(--color-main);
+    font-size: 45px;
+    font-weight: 700;
+   }
+
+   .sec-7_text-wrap .sec-7_text-box .usab-te_text {
+    color: var(--color-D9);
+    font-size: 18px;
+    font-weight: 500;
+   }
+
+   .usab-te_img-wrap {
+    flex-direction: column;
+    gap: 200px;
+   }
+
+   .usab-te_img-wrap .usab-te_img-box {
+    gap: 62px;
+   }
+
+   /* .usab-te_img-wrap .usab-te_img-box .usab-te_img2 {
+    opacity: 0;
+    visibility: hidden;
+   } */
     /* <!-- 프로토타입 테스팅 끝 --> */
 
     /* <!-- 벤치마킹 시작 --> */
