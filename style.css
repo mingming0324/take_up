@@ -63,6 +63,10 @@ a {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .con {
   margin-left: auto;
   margin-right: auto;
@@ -132,12 +136,12 @@ html {
 
 
 body::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
   height: 0;
 }
 
 body::-webkit-scrollbar-thumb {
-  height: 5%;
+  height: 15%;
   background: var(--color-main);
   border-radius: 10px;
 }
@@ -704,13 +708,32 @@ animation: zoomIn 1.2s ease-out  forwards;
    }
 
    .usab-te_img-wrap .usab-te_img-box {
-    gap: 62px;
+    place-items: center;
+    overflow: visible;
+    position: relative;
    }
 
-   /* .usab-te_img-wrap .usab-te_img-box .usab-te_img2 {
+   .usab-te_img-wrap .usab-te_img-box .usab-te_img1,  .usab-te_img2 {
+    grid-area: 1/1;
+    will-change: transform, opcity, filter;
+   }
+
+   .usab-te_img-wrap .usab-te_img-box .usab-te_img1 {
+    opacity: 1;
+    z-index: 2;
+   }
+
+   .usab-te_img-wrap .usab-te_img-box .usab-te_img2 {
     opacity: 0;
-    visibility: hidden;
-   } */
+    filter: blur(2px);
+    z-index: 1;
+   }
+
+   .usab-te_img-wrap .usab-te_img-box .usab-te_arrow-box {  
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   }
     /* <!-- 프로토타입 테스팅 끝 --> */
 
     /* <!-- 벤치마킹 시작 --> */

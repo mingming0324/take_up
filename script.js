@@ -174,3 +174,87 @@ tl_4.to(".perso_content-item li:nth-child(2) .skill:nth-child(2) .dot", {
   duration: .9
 });
 
+// sec-7 usab-te 이미지 애니메이션
+
+// 좌우로 벌릴 고정 간격(px)
+const GAP = 405; 
+
+// 1) 중앙 겹침 초기 세팅 (한 번만 실행)
+gsap.utils.toArray(".usab-te_img-box").forEach((box) => {
+  const img1 = box.querySelector(".usab-te_img1"); // 첫 번째 이미지
+  const img2 = box.querySelector(".usab-te_img2"); // 두 번째 이미지
+  if (!img1 || !img2) return; // 없으면 건너뜀
+
+  gsap.set([img1, img2], { x: 0 }); // 두 이미지를 X축 0 위치(중앙)로 초기화
+  gsap.set(img1, { zIndex: 2, opacity: 1, filter: "blur(0px)" }); // img1: 맨 위, 불투명, 블러 없음
+  gsap.set(img2, { zIndex: 1, opacity: 0, x: 60, filter: "blur(2px)" }); // img2: 뒤에 숨김, 오른쪽으로 60px, 블러 처리
+});
+// 2) 개별 타임라인 생성
+
+// --- 1번 박스 ---
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".usab-te_img-box-1", // 이 박스가 트리거
+    start: "top 70%",              // 박스 top이 화면 70% 지점에 닿을 때 시작
+    toggleActions: "play none none none", // 한 번만 재생
+    // markers: true, 
+  },
+  defaults: { ease: "power4.out" } // 기본 이징(부드러운 가속/감속)
+})
+
+.to(".usab-te_img-box-1 .usab-te_img1", { // img1 애니메이션
+  x: -GAP,               // 왼쪽으로 이동
+  duration: 1.1          // 1.1초 동안 실행
+}, 0)                    // 타임라인 0초 지점에서 시작
+
+.to(".usab-te_img-box-1 .usab-te_img2", { // img2 애니메이션
+  x: GAP,                // 오른쪽으로 이동
+  opacity: 1,            // 불투명하게
+  filter: "blur(0px)",   // 블러 제거
+  duration: 1.1          // 1.1초 동안 실행
+}, 0.05);                // img1보다 0.05초 늦게 시작 → 뒤에서 나오는 느낌
+
+// --- 2번 박스 ---
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".usab-te_img-box-2", // 2번 박스 트리거
+    start: "top 70%",
+    toggleActions: "play none none none",
+    
+  },
+  defaults: { ease: "power4.out" }
+})
+
+.to(".usab-te_img-box-2 .usab-te_img1", {
+  x: -GAP,
+  duration: 1.1
+}, 0)
+
+.to(".usab-te_img-box-2 .usab-te_img2", {
+  x: GAP,
+  opacity: 1,
+  filter: "blur(0px)",
+  duration: 1.1
+}, 0.05);
+
+// --- 3번 박스 ---
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".usab-te_img-box-3", // 3번 박스 트리거
+    start: "top 70%",
+    toggleActions: "play none none none",
+  },
+  defaults: { ease: "power4.out" }
+})
+
+.to(".usab-te_img-box-3 .usab-te_img1", {
+  x: -GAP,
+  duration: 1.1
+}, 0)
+
+.to(".usab-te_img-box-3 .usab-te_img2", {
+  x: GAP,
+  opacity: 1,
+  filter: "blur(0px)",
+  duration: 1.1
+}, 0.05);
