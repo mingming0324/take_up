@@ -2,10 +2,8 @@ gsap.registerPlugin(ScrollTrigger);
 AOS.init({
   once: true // 스크롤 할 때 애니메이션을 한 번만 실행
 });
-// sec-1 overview 텍스트 애니메이션
-// GSAP 타임라인 생성: 모든 애니메이션에 기본적으로 ease를 "power4.out"으로 설정
 
-// 메인 애니메이션
+// main 메인 애니메이션
 let main = gsap.timeline({
   scrollTrigger: {
     trigger: ".main",       
@@ -36,7 +34,8 @@ main.to(".create_4", {
   opacity: 1     
 }, "+=.7");
 
-
+// sec-1 overview 텍스트 애니메이션
+// GSAP 타임라인 생성: 모든 애니메이션에 기본적으로 ease를 "power4.out"으로 설정
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-1",         // 이 섹션이 화면에 등장하면 애니메이션 시작
@@ -50,7 +49,6 @@ let tl = gsap.timeline({
     ease: "power4.out" // 애니메이션 속도 곡선: 느리게 시작 → 빠르게 → 부드럽게 감속
   }
 
-  
 });
 // .create 클래스를 가진 모든 요소에 애니메이션 적용
 tl.to(".create", {
@@ -60,7 +58,7 @@ tl.to(".create", {
   opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
 });
 
-
+// sec-2 bac;lkground 애니메이션
 
 // sec-3 desk-re 텍스트 애니메이션
 let tl_2 = gsap.timeline({
@@ -106,7 +104,7 @@ tl_2.to(".create_3", {
   }
 }, "-=1");
 
-// 유저리서치 애니메이션
+// sec-4 유저리서치 애니메이션
 let tl_3 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-4",       
@@ -128,7 +126,7 @@ tl_3.to(".create_4", {
 });
 
 
-// 페르소나 애니메이션
+// sec-5 페르소나 애니메이션
 let tl_4 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-5",       
@@ -174,8 +172,9 @@ tl_4.to(".perso_content-item li:nth-child(2) .skill:nth-child(2) .dot", {
   duration: .9
 });
 
-// sec-7 usab-te 이미지 애니메이션
+// sec-6 j-map 애니메이션
 
+// sec-7 usab-te 이미지 애니메이션
 // 좌우로 벌릴 고정 간격(px)
 const GAP = 405; 
 
@@ -259,22 +258,22 @@ gsap.timeline({
   duration: 1.1
 }, 0.05);
 
-// 벤치마킹 애니메이션
+// sec-8 벤치마킹 애니메이션
 let tl_5 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-8",       
-    start: "top 70%",      
+    start: "top 20%",      
     toggleActions: "play none none none" ,     
-    markers: true 
+    // markers: true 
   },
   
   defaults: {
-    ease: "power1.out" 
+    ease: "power4.out" 
   }
 });
 
-tl_2.to(".create_5", {
+tl_5.to(".create_5", {
   y: '0%',          
   duration: 1,    
   opacity: 1     
-}, "-=2");
+});

@@ -105,7 +105,8 @@ a {
   transform: translateY(100%);
   opacity: 0;
 }
- .create_2,   .create_3 {
+
+.create_2,   .create_3 {
   transform: translateY(-100%);
   opacity: 0;
 }
@@ -293,40 +294,37 @@ animation: fadeInLeft .5s ease-out  forwards;
 .timeline_wrap {
   overflow: hidden;
 }
-
-
  /* <!-- 오버뷰 끝 --> */
 
  /* <!-- 백그라운드 시작 --> */
- .sec-2 {
+.sec-2 {
   height: 1386px;
- }
+}
 
- .sec-2 .sec-2_text-wrap {
+.sec-2 .sec-2_text-wrap {
   justify-content: center;
   height: 378px;
   gap: 28px;
- }
+}
 
- .sec-2 .sec-2_text-wrap .background {
+.sec-2 .sec-2_text-wrap .background {
   color: var(--color-4B);
- }
-
- .sec-2 .sec-2_text-wrap .sec-2_text-box {
+}
+.sec-2 .sec-2_text-wrap .sec-2_text-box {
   gap: 8px;
- }
+}
 
- .sec-2 .sec-2_text-wrap .background_text {
+.sec-2 .sec-2_text-wrap .background_text {
   font-size: 22px;
   font-weight: 400;
   color: var(--color-text);
- }
+}
 
- .sec-2 .sec-2_text-wrap .background_title {
+.sec-2 .sec-2_text-wrap .background_title {
   font-size: 45px;
   font-weight: 700;
   color: var(--color-main);
- }
+}
   /* <!-- 백그라운드 끝 --> */
 
   /* <!-- 데스크 리서치 시작 --> */
@@ -566,8 +564,6 @@ animation: zoomIn 1.2s ease-out  forwards;
     color: var(--color-main);
   }
 
-
-
   .perso_content-box .perso_skill-box {
     position: absolute;
     justify-content: center;
@@ -646,12 +642,12 @@ animation: zoomIn 1.2s ease-out  forwards;
    /* <!-- 페르소나 끝 --> */
 
    /* <!-- 저니맵 시작 --> */
-   .sec-6 {
+  .sec-6 {
     height: calc(1219px + 1219px);
     background-color: var(--color-background);
     padding: 106px 0 140px 0;
     box-sizing: border-box;
-   }
+  }
 .j-map_img-box {
   flex-direction: column;
 }
@@ -669,71 +665,71 @@ animation: zoomIn 1.2s ease-out  forwards;
    /* <!-- 저니맵 끝 --> */
 
    /* <!-- 프로토타입 테스팅 시작 --> */
-   .sec-7 {
+  .sec-7 {
     height: calc(1464px + 1132px + 1132px);
     background-color: var(--color-background);
     box-sizing: border-box;
     padding: 160px 180px 120px 180px;
-   }
-   .sec-7_text-wrap {
+  }
+  .sec-7_text-wrap {
     gap: 28px;
     height: calc(108px + 144px);
-   }
+  }
 
-   .sec-7_text-wrap .Usability-Testing {
+  .sec-7_text-wrap .Usability-Testing {
     color: var(--color-f0);
     font-size: 16px;
     font-weight: 600;
-   }
+  }
 
-   .sec-7_text-wrap .sec-7_text-box {
+  .sec-7_text-wrap .sec-7_text-box {
     gap: 16px;
-   }
+  }
 
-   .sec-7_text-wrap .sec-7_text-box .usab-te_title {
+  .sec-7_text-wrap .sec-7_text-box .usab-te_title {
     color: var(--color-main);
     font-size: 45px;
     font-weight: 700;
-   }
+  }
 
-   .sec-7_text-wrap .sec-7_text-box .usab-te_text {
+  .sec-7_text-wrap .sec-7_text-box .usab-te_text {
     color: var(--color-D9);
     font-size: 18px;
     font-weight: 500;
-   }
+  }
 
-   .usab-te_img-wrap {
+  .usab-te_img-wrap {
     flex-direction: column;
     gap: 200px;
-   }
+  }
 
-   .usab-te_img-wrap .usab-te_img-box {
+  .usab-te_img-wrap .usab-te_img-box {
     place-items: center;
     overflow: visible;
     position: relative;
-   }
+  }
 
-   .usab-te_img-wrap .usab-te_img-box .usab-te_img1,  .usab-te_img2 {
+  .usab-te_img-wrap .usab-te_img-box .usab-te_img1,  .usab-te_img2 {
     grid-area: 1/1;
     will-change: transform, opcity, filter;
-   }
+  }
 
-   .usab-te_img-wrap .usab-te_img-box .usab-te_img1 {
+  .usab-te_img-wrap .usab-te_img-box .usab-te_img1 {
     opacity: 1;
     z-index: 2;
-   }
+  }
 
-   .usab-te_img-wrap .usab-te_img-box .usab-te_img2 {
+  .usab-te_img-wrap .usab-te_img-box .usab-te_img2 {
     opacity: 0;
     filter: blur(2px);
     z-index: 1;
-   }
+  }
 
-   .usab-te_img-wrap .usab-te_img-box .usab-te_arrow-box {  
+  .usab-te_img-wrap .usab-te_img-box .usab-te_arrow-box {  
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-   }
+  }
     /* <!-- 프로토타입 테스팅 끝 --> */
 
     /* <!-- 벤치마킹 시작 --> */
@@ -790,7 +786,7 @@ animation: zoomIn 1.2s ease-out  forwards;
       display: flex;
       flex-direction: column; /* 위아래 배치 */
       align-items: center;    /* 가운데 정렬 */
-       justify-content: center;
+      justify-content: center;
       box-sizing: border-box;
       gap: 14px;
     }
