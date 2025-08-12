@@ -258,3 +258,23 @@ gsap.timeline({
   filter: "blur(0px)",
   duration: 1.1
 }, 0.05);
+
+// 벤치마킹 애니메이션
+let tl_5 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-8",       
+    start: "top 70%",      
+    toggleActions: "play none none none" ,     
+    markers: true 
+  },
+  
+  defaults: {
+    ease: "power1.out" 
+  }
+});
+
+tl_2.to(".create_5", {
+  y: '0%',          
+  duration: 1,    
+  opacity: 1     
+}, "-=2");

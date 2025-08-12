@@ -101,7 +101,7 @@ a {
   opacity: 0;
 }
 
-.create, .create_1, .create_4{
+.create, .create_1, .create_4, .create_5{
   transform: translateY(100%);
   opacity: 0;
 }
@@ -852,23 +852,6 @@ animation: zoomIn 1.2s ease-out  forwards;
       font-weight: 500;
       color: #848484;
       letter-spacing: -1.1;
-    }
-    /* .benchi-mk_img-box {
-      justify-content: center;
-    }
-
-    .benchi-mk_img-box .benchi-mk_img-text {
-    }
-
-    .benchi-mk_img-box .benchi-mk_img-text li {
-      color: var(--color-f0);
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 24px;
-      width: 320px;
-      height: 146px;
-      text-align: center;
-      /* padding: 50px 105px; */
     }
 
     .benchi-mk_img-box .benchi-mk_img-text li span {
