@@ -147,7 +147,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-  background: #e7e7e7;
+  background: var(--color-D9);
 }
 .swiper-horizontal {
   touch-action: auto;
@@ -739,6 +739,58 @@ animation: zoomIn 1.2s ease-out  forwards;
     /* <!-- 벤치마킹 시작 --> */
     .sec-8  {
       height: 1286px;
+      background-color: var(--color-background);
+    }
+
+    .sec-8_text-wrap {
+      gap: 28px;
+      height: 400px;
+      justify-content: center;
+    }
+
+    .sec-8_text-wrap .benchimarking {
+      color: var(--color-f0);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .sec-8_text-wrap .sec-8_text-box {
+      gap: 16px;
+    }
+
+    .sec-8_text-wrap .sec-8_text-box .benchi-mk_title {
+      color: var(--color-main);
+      font-size: 45px;
+      font-weight: 700;
+    }
+
+    .sec-8_text-wrap .sec-8_text-box .benchi-mk_text {
+      color: var(--color-D9);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28.8px;
+    }
+
+    .benchi-mk_img-box {
+      justify-content: center;
+    }
+
+    .benchi-mk_img-box .benchi-mk_img-text {
+    }
+
+    .benchi-mk_img-box .benchi-mk_img-text li {
+      color: var(--color-f0);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      width: 320px;
+      height: 146px;
+      text-align: center;
+      /* padding: 50px 105px; */
+    }
+
+    .benchi-mk_img-box .benchi-mk_img-text li span {
+      font-weight: 700;
     }
     /* <!-- 벤치마킹 끝 --> */
 

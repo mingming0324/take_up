@@ -25,7 +25,7 @@ main.to(".create_0", {
     const items = document.querySelectorAll(".create_0");
 
     items.forEach(el => {
-      el.classList.add("animate__fadeInLeft"); // 👈 애니메이션 실행됨!
+      el.classList.add("animate__fadeInLeft"); // 애니메이션 실행
     });
   }
 });
@@ -101,7 +101,7 @@ tl_2.to(".create_3", {
     const items = document.querySelectorAll(".span");
 
     items.forEach(el => {
-      el.classList.add("animate__zoomIn"); // 👈 애니메이션 실행됨!
+      el.classList.add("animate__zoomIn"); //  애니메이션 실행
     });
   }
 }, "-=1");
