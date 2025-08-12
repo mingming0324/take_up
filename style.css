@@ -771,7 +771,89 @@ animation: zoomIn 1.2s ease-out  forwards;
       line-height: 28.8px;
     }
 
-    .benchi-mk_img-box {
+    table {
+      border-collapse: collapse; /* 셀 경계선 합치기 */
+      border-spacing: 0;         /* 셀 사이 여백 제거 */
+    }
+
+    .benchi-mk_table {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .benchi-mk_table .benchi-mk_table-title {
+      background-color: var(--color-text);
+      border-radius: 14px 14px 0 0 ;
+    }
+
+    .benchi-mk_table .benchi-mk_table-title th {
+      display: flex;
+      flex-direction: column; /* 위아래 배치 */
+      align-items: center;    /* 가운데 정렬 */
+       justify-content: center;
+      box-sizing: border-box;
+      gap: 14px;
+    }
+
+    .benchi-mk_table .benchi-mk_table-title tr{
+      font-size: 17px;
+      color: var(--color-f0);
+      font-weight: 700;
+      line-height: 27.2px;
+      letter-spacing: -1.1;
+    }
+
+    .benchi-mk_table .benchi-mk_table-title tr th {
+      box-sizing: border-box;
+      width: 304px;
+      height: 146px;
+    }
+
+    .benchi-mk_table .benchi-mk_table-text {
+      background-color: var(--color-text);
+      border-radius: 0 0 0 14px;
+    }
+
+    .benchi-mk_table .benchi-mk_table-text td {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 22.5px;
+      letter-spacing: -1.1;
+      color: var(--color-f0);
+      width: 304px;
+      height: 146px;
+      text-align: center;
+      box-sizing: border-box;
+      background-color: var(--color-background);
+    }
+
+    .benchi-mk_table .benchi-mk_table-text td span {
+      font-weight: 700;
+    }
+
+    .benchi-mk_table tr .benchi-mk_table-sub {
+      color: var(--color-f0);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -1.1;
+      width: 304px;
+      height: 146px;
+      background-color: var(--color-text);
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .benchi-mk_table tr:last-child  .benchi-mk_table-sub{
+      border-radius: 0 0 0 14px;
+    }
+
+    .benchi-mk_table tr .benchi-mk_table-sub .benchi-mk_span-sub {
+      font-size: 14px;
+      font-weight: 500;
+      color: #848484;
+      letter-spacing: -1.1;
+    }
+    /* .benchi-mk_img-box {
       justify-content: center;
     }
 
@@ -791,7 +873,7 @@ animation: zoomIn 1.2s ease-out  forwards;
 
     .benchi-mk_img-box .benchi-mk_img-text li span {
       font-weight: 700;
-    }
+    } */
     /* <!-- 벤치마킹 끝 --> */
 
     /* <!-- 프로젝트 골& 솔루션 시작 --> */
