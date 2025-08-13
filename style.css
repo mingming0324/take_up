@@ -746,8 +746,6 @@ animation: zoomIn 1.2s ease-out  forwards;
 
     .sec-8_text-wrap .benchimarking {
       color: var(--color-f0);
-      font-size: 16px;
-      font-weight: 600;
     }
 
     .sec-8_text-wrap .sec-8_text-box {
@@ -856,8 +854,40 @@ animation: zoomIn 1.2s ease-out  forwards;
     /* <!-- 벤치마킹 끝 --> */
 
     /* <!-- 프로젝트 골& 솔루션 시작 --> */
-    .sec-9  {
+    .sec-9 {
       height: 2014px;
+      background-color: var(--color-background);
+    }
+
+    .sec-9_text-wrap {
+      gap: 28px;
+      height: 340px;
+      justify-content: center;
+    }
+
+    .sec-9_text-wrap .project-solution {
+      color: var(--color-f0);
+    }
+
+    .sec-9_text-wrap .sec-9_text-box {
+      gap: 16px;
+    }
+
+    .sec-9_text-wrap .sec-9_text-box  .proj-G-sol_title {
+      font-size: 45px;
+      font-weight: 700;
+      color: var(--color-main);
+    }
+
+    .sec-9_text-wrap .sec-9_text-box  .proj-G-sol_text {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28.8px;
+      color: var(--color-D9);
+    }
+
+    .sec-9_text-wrap .sec-9_text-box  .proj-G-sol_text span {
+      font-weight: 700;
     }
     /* <!-- 프로젝트 골& 솔루션 끝 --> */
 
