@@ -850,13 +850,15 @@ animation: zoomIn 1.2s ease-out  forwards;
 
     .benchi-mk_img-box .benchi-mk_img-text li span {
       font-weight: 700;
-    } */
+    } 
     /* <!-- 벤치마킹 끝 --> */
 
     /* <!-- 프로젝트 골& 솔루션 시작 --> */
     .sec-9 {
       height: 2014px;
       background-color: var(--color-background);
+      position: relative;
+      overflow: hidden;
     }
 
     .sec-9_text-wrap {
@@ -889,6 +891,141 @@ animation: zoomIn 1.2s ease-out  forwards;
     .sec-9_text-wrap .sec-9_text-box  .proj-G-sol_text span {
       font-weight: 700;
     }
+
+    .sec-9_img-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .sec-9_img-wrap .sec-9_img-text {
+      display: flex;
+      justify-content: space-between;
+      width: 972px;
+    }
+
+    .sec-9_img-wrap .sec-9_img-text .as-is {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--color-84);
+    }
+
+    .sec-9_img-wrap .sec-9_img-text .to-be {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-main);
+    }
+
+    .sec-9_img-wrap .sec-9_img-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sec-9_img-wrap .sec-9_img-box .proj-G-so_line  {
+      margin-right: -8px;
+      z-index: 1;
+    }
+
+    .sec-9_img-wrap  .proj-G_item-box {
+      width: 524px;
+      height: 120px;
+      border-radius: 14px;
+      background-color: var(--color-4B);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .sec-9_img-wrap .sec-9_img-box .proj-G_item {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--color-B1);
+    }
+
+    .sec-9_img-wrap .sec-9_img-box .proj-G_sub {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-84);
+    }
+    
+    .sec-9_img-wrap .sec-9_img-box  .sol_item-box {
+      width: 524px;
+      height: 120px;
+      border-radius: 14px;
+      background-color: var(--color-f0);
+      border: 1px solid var(--color-main);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .sec-9_img-wrap .sec-9_img-box .sol_item {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--color-111);  
+    }
+
+    .sec-9_img-wrap .sec-9_img-box .sol_sub {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-text);
+    }
+
+    .sec-9_bottom-box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      height: 370px;
+      gap: 78px;
+    }
+
+    .sec-9_bottom-box p {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 48px;
+      color: var(--color-f0);
+      text-align: center;
+    }
+
+    .sec-9_bottom-box p span {
+      font-weight: 700;
+    }
+  .sec-9_back-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 604px;
+    z-index: 0;
+  }
+
+  .solution-img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    margin-top: 196px;
+  }
+
+  .solution-img-box .solutin-img-1 {
+    width: 207px;
+    height: 166px;
+    margin-bottom: -30px;
+    z-index: 1;
+  }
+
+  .solution-img-box .solutin-img-2 {
+    width: 1445px;
+    height: 192px;
+  }
     /* <!-- 프로젝트 골& 솔루션 끝 --> */
 
     /* <!-- 로고 소개 시작 --> */
