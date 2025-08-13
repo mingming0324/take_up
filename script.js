@@ -277,3 +277,37 @@ tl_5.to(".create_5", {
   duration: 1,    
   opacity: 1     
 });
+
+// sec-8 벤치마킹 애니메이션
+let tl_6 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-9",       
+    start: "top 25%",      
+    toggleActions: "play none none none" ,     
+    markers: true 
+  },
+  
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_6.to(".create_7", {
+  x: '0%',          
+  duration: 1.2,    
+  stagger: 0.2,    
+  opacity: 1
+});
+
+tl_6.to(".create_8", {
+  y: '0%',          
+  duration: 1.2,    
+  stagger: 0.2,    
+  opacity: 1
+});
+
+tl_6.to(".create_9", {
+  y: '0%',          
+  duration: 1.2,    
+  opacity: 1
+});
