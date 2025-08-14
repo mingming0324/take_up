@@ -284,7 +284,7 @@ let tl_6 = gsap.timeline({
     trigger: ".sec-9",       
     start: "top 25%",      
     toggleActions: "play none none none" ,     
-    markers: true 
+    // markers: true 
   },
   
   defaults: {
