@@ -1062,6 +1062,7 @@ animation: zoomIn 1.2s ease-out  forwards;
       font-size: 22px;
       font-weight: 500;
       line-height: 35.2px;
+      color: var(--color-text);
     }
 
     .sec-10_logo-box {
@@ -1072,20 +1073,50 @@ animation: zoomIn 1.2s ease-out  forwards;
     .sec-10_logo-box .logo_item {
       width: 960px;
       height: 404px;
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .sec-10_logo-box .logo_item-1 {
       background-color: var(--color-main);
     }
 
+    .sec-10_logo-box .logo_item-1 img {
+      width: 348px;
+    }
+
     .sec-10_logo-box .logo_item-2 {
       background-color: var(--color-background);
     }
+
+    .sec-10_logo-box .logo_item-2 img {
+      width: 197px;
+    }
     /* <!-- 로고 소개 끝 --> */
 
-    /* <!-- 데스크 시스템 시작 --> */
-    /* <!-- 데스크 시스템 끝 --> */
+    /* <!-- 디자인 시스템 시작 --> */
+    .sec-11 {
+      height: 850px;
+      background-color: var(--color-background);
+    }
+
+    .sec-11_text-wrap {
+      height: 314px;
+      gap: 28px;
+      justify-content: center;
+    }
+
+    .sec-11_text-wrap .design-system {
+      color: var(--color-main);
+    }
+
+    .sec-11_text-wrap .sec-9_text-box .design-st_title {
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--color-f0);
+    }
+    /* <!-- 디자인 시스템 끝 --> */
 
     /* <!-- 플로우차트 시작 --> */
     /* <!-- 플로우차트 끝 --> */

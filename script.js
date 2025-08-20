@@ -278,7 +278,7 @@ tl_5.to(".create_5", {
   opacity: 1     
 });
 
-// sec-8 벤치마킹 애니메이션
+// sec-9 프골 & 솔루션 애니메이션
 let tl_6 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-9",       
