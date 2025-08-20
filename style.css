@@ -1116,6 +1116,31 @@ animation: zoomIn 1.2s ease-out  forwards;
       font-weight: 700;
       color: var(--color-f0);
     }
+
+    .design-st_img-box {
+      gap: 100px;
+      justify-content: center;
+    }
+
+    .design-st_img-box .design-st_img-text {
+      display: flex;
+      align-items: end;
+      margin-bottom: 42px;
+      gap: 14px;
+    }
+
+    .design-st_img-box .design-st_img-text span {
+      font-size: 32px;
+      font-weight: 600;
+      color: var(--color-main);
+    }
+
+    .design-st_img-box .design-st_img-text p {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--color-84);
+      /* margin-left: 14px; */
+    }
     /* <!-- 디자인 시스템 끝 --> */
 
     /* <!-- 플로우차트 시작 --> */
