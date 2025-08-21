@@ -335,6 +335,16 @@ animation: fadeInLeft .5s ease-out  forwards;
   font-weight: 700;
   color: var(--color-main);
 }
+
+.backgroun_video-wrap {
+  justify-content: center;
+  gap: 40px;
+}
+
+.backgroun_video-wrap .backgroun_video-box {
+  flex-direction: column;
+  gap: 40px;
+}
   /* <!-- 백그라운드 끝 --> */
 
   /* <!-- 데스크 리서치 시작 --> */

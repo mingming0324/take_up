@@ -58,7 +58,31 @@ tl.to(".create", {
   opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
 });
 
-// sec-2 bac;lkground 애니메이션
+// sec-2 background 애니메이션
+let alreadyPlayed = false; 
+const videos = document.querySelectorAll(".sec-2 video"); 
+
+let tl_1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-2",       
+    start: "top 15%",      
+    toggleActions: "play none none none" ,     
+    markers: true,
+    onEnter: () => {   // ScrollTrigger가 ".sec-2" 섹션에 진입했을 때 실행되는 함수
+      if (alreadyPlayed) return;  // 이미 재생한 적이 있으면 함수 종료 → 여러 번 재생되지 않게 막음
+      alreadyPlayed = true;    // 처음 진입했음을 기록 → 이후엔 다시 실행되지 않도록 설정
+ 
+      videos.forEach(v => {  // .sec-2 안의 모든 <video> 요소를 하나씩 순회
+        v.currentTime = 0;  // 비디오 시작 위치를 항상 0초(처음)으로 맞춤
+        v.muted = true;     // 모바일/브라우저 자동재생 정책 때문에 무음으로 설정해야 재생됨
+    
+        v.play().catch(err => {    // video.play() 실행 → 실패할 경우(브라우저 정책 등) 에러를 잡음
+          console.log("재생 실패:", err);   // 실패 이유를 콘솔에 출력 (디버깅 용도)
+        });
+      });
+    }
+}
+});
 
 // sec-3 desk-re 텍스트 애니메이션
 let tl_2 = gsap.timeline({
