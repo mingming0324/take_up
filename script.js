@@ -67,7 +67,7 @@ let tl_1 = gsap.timeline({
     trigger: ".sec-2",       
     start: "top 15%",      
     toggleActions: "play none none none" ,     
-    markers: true,
+    // markers: true,
     onEnter: () => {   // ScrollTrigger가 ".sec-2" 섹션에 진입했을 때 실행되는 함수
       if (alreadyPlayed) return;  // 이미 재생한 적이 있으면 함수 종료 → 여러 번 재생되지 않게 막음
       alreadyPlayed = true;    // 처음 진입했음을 기록 → 이후엔 다시 실행되지 않도록 설정

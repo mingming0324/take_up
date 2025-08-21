@@ -309,6 +309,7 @@ animation: fadeInLeft .5s ease-out  forwards;
  /* <!-- 백그라운드 시작 --> */
 .sec-2 {
   height: 1386px;
+  /* background-color: var(--color-background); */
 }
 
 .sec-2 .sec-2_text-wrap {
@@ -344,6 +345,10 @@ animation: fadeInLeft .5s ease-out  forwards;
 .backgroun_video-wrap .backgroun_video-box {
   flex-direction: column;
   gap: 40px;
+}
+
+.backgroun_video-wrap video {
+  border-radius: 35px;
 }
   /* <!-- 백그라운드 끝 --> */
 
