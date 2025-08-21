@@ -160,17 +160,17 @@ tl_4.to(".perso_content-item li:nth-child(1) .skill:nth-child(1) .dot", {
 tl_4.to(".perso_content-item li:nth-child(1) .skill:nth-child(2) .dot", {
   left: "80%", // 2번 dot 목표 위치
   duration: .9
-}) 
+}, "+=.5") 
 
 tl_4.to(".perso_content-item li:nth-child(2) .skill:nth-child(1) .dot", {
   left: "70%", // 3번 dot 목표 위치
   duration: .9
-}) 
+}, "-=.5") 
 
 tl_4.to(".perso_content-item li:nth-child(2) .skill:nth-child(2) .dot", {
   left: "60%", // 4번 dot 목표 위치
   duration: .9
-});
+}, "-=.5");
 
 // sec-6 j-map 애니메이션
 
@@ -295,7 +295,7 @@ let tl_6 = gsap.timeline({
 tl_6.to(".create_7", {
   x: '0%',          
   duration: 1.2,    
-  stagger: 0.2,    
+  // stagger: 0.05,    
   opacity: 1
 });
 
@@ -397,7 +397,7 @@ let tl_9 = gsap.timeline({
     trigger: ".sec-13",       
     start: "top 40%",      
     toggleActions: "play none none none" ,     
-    markers: true,
+    // markers: true,
   },
 
   defaults: {
