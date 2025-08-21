@@ -106,13 +106,17 @@ a {
   opacity: 0;
 }
 
-.create_2,   .create_3, .create_8, .create_9 {
+.create_2,   .create_3, .create_8, .create_9, .create_10 {
   transform: translateY(-100%);
   opacity: 0;
 }
 
-.create_7 {
+.create_7, .create_11, .create_12, .create_13  {
   transform: translateX(-100%);
+  opacity: 0;
+}
+
+.create_14, .create_15 {
   opacity: 0;
 }
 
@@ -1127,6 +1131,7 @@ animation: zoomIn 1.2s ease-out  forwards;
       align-items: end;
       margin-bottom: 42px;
       gap: 14px;
+      overflow: hidden;
     }
 
     .design-st_img-box .design-st_img-text span {
@@ -1214,12 +1219,33 @@ animation: zoomIn 1.2s ease-out  forwards;
     .flow-ch_img-box {
       justify-content: center;
     }
+
+    .animate__pulse {
+      transform-origin: bottom center;          /* 꼭대기 축으로 흔들림 */
+      animation: pulse 1s ease-in-out forwards;
+      animation-iteration-count: 3;
+      /* animation: swing 1s ease-in-out both;  both = 시작/끝 상태 유지 */
+    }
+
+    @keyframes pulse {
+      /* 
+      animate__swing
+      20%  { transform: rotate3d(0, 0, 1, 15deg); }
+      40%  { transform: rotate3d(0, 0, 1, -10deg); }
+      60%  { transform: rotate3d(0, 0, 1, 5deg); }
+      80%  { transform: rotate3d(0, 0, 1, -5deg); }
+      100% { transform: rotate3d(0, 0, 1, 0deg); } */
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.1); } /* 중간에 살짝 커짐 */
+      100% { transform: scale(1); }    /* 다시 원래 크기 */
+    }
     /* <!-- 플로우차트 끝 --> */
 
     /* <!-- 와이어프레임 시작 --> */
     .sec-14 {
       height: 1300px;
       background-color: var(--color-background);
+      position: relative;
     }
 
     .sec-14_text-wrap {
@@ -1243,11 +1269,23 @@ animation: zoomIn 1.2s ease-out  forwards;
     .wire-fm_img-box {
       justify-content: center;
       overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+
+    .wire-fm_back-img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
     /* <!-- 와이어프레임 끝 --> */
 
-    /* <!-- 카테고리 초이스 시작 --> */
-    /* <!-- 카테고리 초이스 끝 --> */
+    /* <!-- 어플 소개 메인 시작 --> */
+    .sec-15 { 
+      height: 1080px;
+    }
+    /* <!-- 어플 소개 메인 끝 --> */
 
     /* <!-- 주문하기 시작 --> */
     /* <!-- 주문하기 끝 --> */

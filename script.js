@@ -311,3 +311,107 @@ tl_6.to(".create_9", {
   duration: 1.2,    
   opacity: 1
 });
+
+// sec-10 로고 애니메이션
+let text = document.querySelector(".logo_title > span");
+let content = text.textContent;
+text.textContent = ""; // 처음엔 비워두기
+
+let tl_7 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-10",       
+    start: "top 30%",      
+    toggleActions: "play none none none" ,     
+    // markers: true,
+  },
+
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_7.to(text, {
+  duration: 2,
+ text: content,
+ ease: "none"
+});
+
+tl_7.to(".create_10", {
+  y: '0%',          
+  duration: 1.2,    
+  opacity: 1
+});
+
+// sec-11 디자인 시스템 애니메이션
+// let text2 = document.querySelector(".design-st_img-text-2 > p");
+// let content2 = text2.textContent;
+// text2.textContent = ""; // 처음엔 비워두기
+
+let tl_8 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-11",       
+    start: "top 30%",      
+    toggleActions: "play none none none" ,     
+    // markers: true,
+  },
+
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_8.to(".create_11", {
+  x: '0%',          
+  duration: 1.2,    
+  opacity: 1
+});
+
+tl_8.to(".create_12", {
+  x: '0%',          
+  duration: 1.2,    
+  opacity: 1
+}, "-=.5");
+
+tl_8.to(".create_13", {
+  x: '0%',          
+  duration: 1.2,    
+  opacity: 1
+}, "-=.5");
+
+tl_8.to(".create_14", {      
+  duration: 1.2,    
+  opacity: 1
+}, "-=.5");
+
+// tl_8.to(text2, {
+// duration: 1.2,
+//  text: content2,
+//  ease: "none"
+// });
+
+//sec-12 컴포넌트 애니메이션 없음
+
+//sec-13 플로우차트 애니메이션 
+let tl_9 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-13",       
+    start: "top 40%",      
+    toggleActions: "play none none none" ,     
+    markers: true,
+  },
+
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_9.to(".create_15", {
+  onComplete: () => {
+    // 여기서 .swing 클래스 추가
+    const items = document.querySelectorAll(".flow-ch_btn-box > span");
+
+    items.forEach(el => {
+      el.classList.add("animate__pulse"); // 애니메이션 실행
+    });
+  }
+});
