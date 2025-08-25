@@ -204,8 +204,8 @@ const GAP = 405;
 
 // 1) 중앙 겹침 초기 세팅 (한 번만 실행)
 gsap.utils.toArray(".usab-te_img-box").forEach((box) => {
-  const img1 = box.querySelector(".usab-te_img-item"); // 첫 번째 이미지
-  const img2 = box.querySelector(".usab-te_img2"); // 두 번째 이미지
+  const img1 = box.querySelector(".usab-te_img-item-1"); // 첫 번째 이미지
+  const img2 = box.querySelector(".usab-te_img-item-2"); // 두 번째 이미지
   if (!img1 || !img2) return; // 없으면 건너뜀
 
   gsap.set([img1, img2], { x: 0 }); // 두 이미지를 X축 0 위치(중앙)로 초기화
@@ -230,7 +230,7 @@ gsap.timeline({
   duration: 1.1          // 1.1초 동안 실행
 }, 0)                    // 타임라인 0초 지점에서 시작
 
-.to(".usab-te_img-box-1 .usab-te_img2", { // img2 애니메이션
+.to(".usab-te_img-box-1 .usab-te_img-item-2", { // img2 애니메이션
   x: GAP,                // 오른쪽으로 이동
   opacity: 1,            // 불투명하게
   filter: "blur(0px)",   // 블러 제거
@@ -248,12 +248,12 @@ gsap.timeline({
   defaults: { ease: "power4.out" }
 })
 
-.to(".usab-te_img-box-2 .usab-te_img1", {
+.to(".usab-te_img-box-2 .usab-te_img-item-1", {
   x: -GAP,
   duration: 1.1
 }, 0)
 
-.to(".usab-te_img-box-2 .usab-te_img2", {
+.to(".usab-te_img-box-2 .usab-te_img-item-2", {
   x: GAP,
   opacity: 1,
   filter: "blur(0px)",
@@ -270,12 +270,12 @@ gsap.timeline({
   defaults: { ease: "power4.out" }
 })
 
-.to(".usab-te_img-box-3 .usab-te_img1", {
+.to(".usab-te_img-box-3 .usab-te_img-item-1", {
   x: -GAP,
   duration: 1.1
 }, 0)
 
-.to(".usab-te_img-box-3 .usab-te_img2", {
+.to(".usab-te_img-box-3 .usab-te_img-item-2", {
   x: GAP,
   opacity: 1,
   filter: "blur(0px)",
