@@ -518,6 +518,7 @@ animation: zoomIn 1.2s ease-out  forwards;
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 0;
   }
 
   .user-re_back-img img {
@@ -583,7 +584,6 @@ animation: zoomIn 1.2s ease-out  forwards;
     font-size: 20px;
     font-weight: 600;
     color: var(--color-f0);
-   
     text-align: center;
     white-space: nowrap;
   }
@@ -596,13 +596,6 @@ animation: zoomIn 1.2s ease-out  forwards;
     text-align: center;
   }
 
-  .sec-4 .user-re_back-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-  }
   /* <!-- 유저 리서치 끝 --> */
 
   /* <!-- 페르소나 시작 --> */
