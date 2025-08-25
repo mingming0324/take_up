@@ -346,7 +346,7 @@ text.textContent = ""; // 처음엔 비워두기
 let tl_7 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-10",       
-    start: "top 30%",      
+    start: "top 70%",      
     toggleActions: "play none none none" ,     
     // markers: true,
   },
@@ -376,9 +376,9 @@ tl_7.to(".create_10", {
 let tl_8 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-11",       
-    start: "top 30%",      
+    start: "top 60%",      
     toggleActions: "play none none none" ,     
-    // markers: true,
+    markers: true,
   },
 
   defaults: {
