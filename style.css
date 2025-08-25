@@ -101,7 +101,12 @@ a {
   opacity: 0;
 }
 
-.create, .create_1, .create_4, .create_5{
+.create_4, .create_16 {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.create, .create_1, .create_5{
   transform: translateY(100%);
   opacity: 0;
 }
@@ -117,6 +122,9 @@ a {
 }
 
 .create_14, .create_15 {
+  opacity: 0;
+}
+.create_17 {
   opacity: 0;
 }
 
@@ -177,8 +185,30 @@ body::-webkit-scrollbar-track {
   position: relative;
 }
 
+.main-text-box {
+  width: 1920px;
+  position: absolute;
+  top: 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 38px 72px;
+}
+
+.main-text-box span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5d5d5d;
+}
+
+.main-text-box p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5d5d5d;
+}
+
 .main-img_line {
   position: absolute;
+  overflow: hidden;
 }
 
 .main-img_line-1 {
