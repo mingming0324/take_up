@@ -231,6 +231,8 @@ body::-webkit-scrollbar-track {
 /* <!-- 오버뷰 시작 --> */
 .sec-1 {
   height: 650px;
+  position: relative;
+  overflow: hidden;
 }
 
 .sec-1_text-wrap {
@@ -261,6 +263,12 @@ body::-webkit-scrollbar-track {
   color: var(--color-text);
 }
 
+.sec-1_back-img {
+  position: absolute;
+  bottom: -340px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
  /* <!-- 오버뷰 끝 --> */
 
