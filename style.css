@@ -1429,6 +1429,106 @@ animation: zoomIn 1.2s ease-out  forwards;
       color: #e5e5e5;
       margin-left: 22px;
     }
+
+    .compo_img-wrap {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .compo_img-wrap-1 {
+      gap: 20px;
+    }
+
+    .compo_img-wrap .compo_item-box {
+      gap: 20px;
+    }
+    .compo_img-wrap-1 .compo_item-box-1 {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .compo_item {
+      flex-direction: column;
+      justify-content: start;
+      border-radius: 20px;
+      background-color: var(--color-text);
+      gap: 35px;
+      box-sizing: border-box;
+    }
+
+    .compo_item span {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-fff);
+    }
+
+    .compo_item:hover {
+      background-color: var(--color-4B);
+    }
+
+    .compo_item:hover span {
+      color: var(--color-main);
+      font-weight: 700;
+    }
+    .compo_img-wrap .compo_item-box .compo_item {
+      width: 375px;
+      height: 352px;
+      padding: 22px 43px 38px;
+    }
+
+    .compo_img-wrap .compo_item-box .compo_item img {
+      width: 288px;
+      height: 238px;
+    }
+
+    .compo_img-wrap .compo_item {
+      width: 770px;
+      height: 362px;
+      padding: 22px 43px 43px;
+    }
+
+    .compo_img-wrap .compo_item img {
+      width: 683px;
+      height: 244px;
+    }
+    .compo_img-wrap-1 .compo_item-box-1 .compo_item-1 {
+      padding: 22px 27px 84px;
+      gap: 55px;
+    }
+    .compo_img-wrap-1 .compo_item-box-1 .compo_item-1 img {
+      width: 320px;
+      height: 172px;
+    } 
+
+    .compo_img-wrap-1 .compo_item-box-1 .compo_item-1-2 {
+      height: 310px;
+      gap: 42px;
+    }
+
+    .compo_img-wrap-1 .compo_item-box-1 .compo_item-1-2 img {
+      width: 320px;
+      height: 172px;
+    }
+
+    .compo_img-wrap-1 .compo_item-box-1 .compo_item-2 {
+      height: 363px;
+      gap: 35px;
+      padding: 22px 27px 42px;
+    }
+
+    .compo_img-wrap-1 .compo_item-box-1 .compo_item-2 img {
+      width: 320px;
+      height: 244px;
+    }
+
+    .compo_img-wrap-1 .compo_item-box-1 .compo_item-2-1 {
+      height: 405px;
+      padding: 28px 43px 48px;
+      gap: 40px;
+    }
+
+    .compo_img-wrap-1 .compo_item-box-1 .compo_item-2-1 img {
+      width: 288px;
+      height: 270px;
+    }
     /* <!-- 컴포넌트 끝 --> */
 
     /* <!-- 플로우차트 시작 --> */
