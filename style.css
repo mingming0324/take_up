@@ -1254,6 +1254,23 @@ animation: zoomIn 1.2s ease-out  forwards;
       justify-content: center;
     }
 
+    .design-st_img-box .pretendard {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .design-st_img-box .pretendard span {
+      font-size: 48px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .design-st_img-box .pretendard p {
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--color-84);
+    }
+
     .design-st_img-box .design-st_img-text {
       display: flex;
       align-items: end;
@@ -1267,6 +1284,106 @@ animation: zoomIn 1.2s ease-out  forwards;
       font-weight: 600;
       color: var(--color-main);
     }
+    .color-wrap {
+      flex-direction: column;
+      gap: 26px;
+    }
+
+    .color-wrap .color {
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .color-wrap .color .main-color {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 8px;
+      background-color: var(--color-main);
+      height: 116px;
+      border-radius: 10px;
+    }
+
+    .color-wrap .color .main-color span {
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--color-111);
+    }
+
+    .color-wrap .color .sub-color .sub-color-1 {
+      background-color: #FEE93C;
+      height: 106px;
+      flex-grow: 1;
+      border-radius: 10px 0 0 10px;
+      justify-content: center;
+      align-items: end;
+    }
+
+    .color-wrap .color .sub-color .sub-color-2 {
+      flex-grow: 1;
+      height: 104px;
+      border: 1px solid var(--color-84); 
+      border-radius: 0 10px 10px 0;
+      justify-content: center;
+      align-items: end;
+    }
+
+    .color-wrap .color .sub-color span {
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--color-84);
+      margin-bottom: 18px;
+    }
+
+    .color-wrap .color-gray {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .color-wrap .color-gray span {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--color-84);
+    }
+
+    .color-wrap .color-gray .gray-color li {
+      flex-grow: 1;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+    }
+
+    .color-wrap .color-gray .gray-color .gray-color-1 {
+      background-color: #222;
+      border-radius: 10px 0 0 10px;
+    }
+    .color-wrap .color-gray .gray-color .gray-color-2 {
+      background-color: #a1a1a1;
+    }
+
+    .color-wrap .color-gray .gray-color .gray-color-3 {
+      background-color: #fafafa;
+      color: #fafafa;
+    }
+
+    .color-wrap .color-gray .gray-color .gray-color-4 {
+      background-color: #fff;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .color-wrap .color-gray .gray-color span {
+      font-size: 10px;
+      font-weight: 500;
+      color: #fff;
+      margin-left: 10px;
+    }
+
+    .color-wrap .color-gray .gray-color .gray-color-3 span,
+    .color-wrap .color-gray .gray-color .gray-color-4 span {
+      color: #a1a1a1;
+    }
 
     .design-st_img-box .design-st_img-text p {
       font-size: 20px;
@@ -1274,6 +1391,8 @@ animation: zoomIn 1.2s ease-out  forwards;
       color: var(--color-84);
       /* margin-left: 14px; */
     }
+
+
     /* <!-- 디자인 시스템 끝 --> */
 
     /* <!-- 컴포넌트 시작 --> */
