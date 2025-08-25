@@ -170,103 +170,31 @@ body::-webkit-scrollbar-track {
 
 /* <!-- 메인페이지 시작 --> */
 .main {
-  height: 1078px;
-  padding: 86px 150px;
-  box-sizing: border-box;
-  position: relative;
+  height: 1280px;
   overflow: hidden;
-}
-
-.main_text-wrap {
-  flex-direction: column;
-  gap: 295px;
-}
-
-.main_text-wrap .main-name {
-  color: var(--color-main);
-}
-
-.main_text-wrap .main_text-box {
-  flex-direction: column;
-  gap: 265px;
-}
-
-.main_text-wrap .main_text-box .main_text {
-  color: var(--color-main);
-  font-size: 22px;
-  font-weight: 400;
-  margin-top: 14px;
-}
-
-.main_text-wrap .main_project-text li {
-  font-size: 17px;
-  font-weight: 500;
-  color: var(--color-main);
-}
-
-.main_text-wrap .main_project-text li:last-child {
-  margin-top: 10px;
-}
-
-.main_text-wrap .main_project-text .Project {
-  margin-right: 85px;
-}
-
-.main_text-wrap .main_project-text .Period {
-  margin-right: 90px;
-}
-
-/* .main_img-wrap .main_img-box .main-p img {
-  height: 732px;
-}
-
-.main_img-wrap .main_img-box .main-s img {
-  width: 566px;
-} */
-
-.main_img-wrap .main_img-box {
-  margin-left: 330PX;
-  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
-
-.main_img-wrap .main_img-box .main_img-phone img {
-  width: 720px;
-}
-
-.main_img-wrap .main_img-box .shadow img {
-  width:720PX;
-}
-
-.main_img-wrap .main_img-box .shadow{
+.main-img_line {
   position: absolute;
-  z-index: -1;
-  top: 770px;
-  left: 60px;
-  /* top: 855px;
-  left: 1200px; */
 }
 
-.main_back-img {
+.main-img_line-1 {
+  left: 0;
+  top: 300px;
+}
+
+.main-img_line-2 {
+  right: 0;
+  top: 510px;
+}
+
+.main-img_line-2 .main-text {
   position: absolute;
-  top: 350px;
-  left: 880px;
-}
-
-@keyframes fadeInLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.animate__fadeInLeft {
-animation: fadeInLeft .5s ease-out  forwards;
+  top: 50px;
+  left: 50px;
 }
 /* <!-- 메인페이지 끝 --> */
 
