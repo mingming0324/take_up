@@ -1,3 +1,30 @@
+@font-face {
+  font-family: 'Pretendard-bold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-semibold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-medium';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* 노말라이즈 */
 body, ul, li, span, p {
   margin: 0;
@@ -15,6 +42,10 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 1920px;
+}
+
+html, body {
+  font-family: 'Pretendard';
 }
 
 
@@ -364,10 +395,11 @@ a {
   background-color: #2E2F34;
 }
 
+/* -- 상단 텍스트 -- */
 .main-text-box {
+  width: 1444px;
   padding-top: 122px;
   margin: 0 auto;
-  width: 1444px;
 }
 
 .main-text-box > .main-tag {
@@ -427,31 +459,144 @@ a {
   width: 100%;
 }
 
-.sec_1-3 > .main-bg-1 {
-  width: 703px;
-  height: auto;
-  padding-top: 180px;
-  margin-left: 313px;
+.main-content {
+  position: relative;
+  width: 1400px;
+  height: 980px;
+  margin: 0 auto;
+  border: 1px solid gold;
 }
 
-.sec_1-3 > .main-bg-1 > img {
+.main-content .menu-img-box {
+  position: absolute;
+  width: 824px;
+  height: auto;
+}
+
+.sec_1-3 .main-bg-1 {
+  width: 703px;
+  height: auto;
+  margin-left: 36px;
+  padding-top: 180px;
+  z-index: 0;
+}
+
+.sec_1-3 .main-bg-1 > img {
   display: block;
   width: 100%;
 }
 
-.sec_1-3 > .main-bg-2 {
+.sec_1-3 .menu {
+  display: block;
+  width: 600px;
+  height: auto;
+}
+
+.sec_1-3 .menu > img {
+  display: block;
+  width: 100%;
+}
+
+.menu-con {
+  display: flex;
+}
+
+.menu-con .menu-dot {
+  width: 85px;
+  height: auto;
+  margin-right: 16px;
+  padding-top: 8px;
+}
+
+.menu-con .menu-dot > img {
+  display: block;
+  width: 100%;
+}
+
+.menu-con .menu-text > span {
+  font-size: 26px;
+  font-weight: 600;
+  color: #FF4D4D;
+}
+
+.menu-con .menu-text > p {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #DBDBDB;
+}
+
+/* 오른쪽 */
+.main-content .order-img-box {
+  position: absolute;
+  width: 824px;
+  height: auto;
+  right: 50px;
+}
+
+/* .order-img-box .main-bg-2 {
   position: absolute;
   width: 365px;
   height: auto;
-  bottom: 268px;
-  right: 0;
-  padding-right: 539px;
+  padding-bottom: 144px;
+  z-index: 0;
 }
 
-.sec_1-3 > .main-bg-2 > img {
+.order-img-box .main-bg-2 > img {
+  display: block;
+  width: 100%;
+} */
+
+.order-img-box .order-bg {
+  width: 600px;
+  height: auto;
+  margin-left: 20px;
+  padding-top: 20px;
+  z-index: 0;
+}
+
+.order-img-box .order-bg > img {
   display: block;
   width: 100%;
 }
+
+.order-con {
+  position: absolute;
+  top: 400px;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid blue;
+}
+
+.order-con .order-dot {
+  width: 16px;
+  height: auto;
+  margin-right: 16px;
+  padding-top: 8px;
+}
+
+.order-con .order-dot > img {
+  display: block;
+  width: 100%;
+}
+
+.order-con .order-text > span {
+  font-size: 26px;
+  font-weight: 600;
+  color: #FF4D4D;
+}
+
+.order-con .order-text > p {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #DBDBDB;
+}
+
+
 
 
 
