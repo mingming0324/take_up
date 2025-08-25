@@ -501,8 +501,20 @@ animation: zoomIn 1.2s ease-out  forwards;
     background-size: cover;
     background-position: 50% -50%;
     background-repeat: no-repeat;
+    position: relative;
   }
 
+  .user-re_back-img {
+    width: 1049px;
+    height: 699px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .user-re_back-img img {
+    width: 100%;
+  }
   .sec-4_text-wrap {
     justify-content: center;
     height: 414px;
@@ -521,6 +533,7 @@ animation: zoomIn 1.2s ease-out  forwards;
     font-size: 45px;
     font-weight: 700;
     color: var(--color-fff);
+
   }
 
   .sec-4_text-wrap .sec-4_text-box .user-re_text {
@@ -550,15 +563,21 @@ animation: zoomIn 1.2s ease-out  forwards;
     padding: 65px 66px;
   }
 
+  .sec-4_contents-wrap .user-re_content-box .user-re_span-box {
+    background-color: var(--color-main);
+    border-radius: 14px;
+    padding: 20px 54px;
+  }
+  .sec-4_contents-wrap .user-re_content-box .user-re_span-box-3 {
+    padding: 20px 51px;
+  }
   .sec-4_contents-wrap .user-re_content-box .user-re_item-title {
     font-size: 20px;
     font-weight: 600;
     color: var(--color-f0);
-    background-color: var(--color-main);
-    border-radius: 14px;
-    padding: 20px 54px;
-    width: 70px;
+   
     text-align: center;
+    white-space: nowrap;
   }
 
   .sec-4_contents-wrap .user-re_content-box .user-re_item-text {
