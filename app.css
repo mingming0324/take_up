@@ -356,6 +356,103 @@ a {
 
 /* ---- 온보딩 끝 ---- */
 
+
 /* ---- 메인 페이지 시작 ---- */
+.sec_1-3 {
+  position: relative;
+  height: 1573px;
+  background-color: #2E2F34;
+}
+
+.main-text-box {
+  padding-top: 122px;
+  margin: 0 auto;
+  width: 1444px;
+}
+
+.main-text-box > .main-tag {
+  display: inline-block;
+  padding: 5px 11px;
+  border-radius: 3px;
+  border: 2px solid #FF4D4D;
+}
+
+.main-text-box > .main-tag > p {
+  font-size: 11px;
+  font-weight: 600;
+  color: #FF4D4D;
+}
+
+.main-text-box > .main-text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.main-text-box .main-title {
+  color: #FF4D4D;
+  margin-top: 32px;
+}
+
+.main-text-box .main-title > span {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.main-text-box .main-sub {
+  text-align: right;
+  color: #EEEEEE;
+}
+
+.main-text-box .main-sub > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.main-text-box .main-sub .bold {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.up-img {
+  width: 87px;
+  height: auto;
+  margin-top: 74px;
+  margin-left: 235px;
+}
+
+.up-img > img {
+  display: block;
+  width: 100%;
+}
+
+.sec_1-3 > .main-bg-1 {
+  width: 703px;
+  height: auto;
+  padding-top: 180px;
+  margin-left: 313px;
+}
+
+.sec_1-3 > .main-bg-1 > img {
+  display: block;
+  width: 100%;
+}
+
+.sec_1-3 > .main-bg-2 {
+  position: absolute;
+  width: 365px;
+  height: auto;
+  bottom: 268px;
+  right: 0;
+  padding-right: 539px;
+}
+
+.sec_1-3 > .main-bg-2 > img {
+  display: block;
+  width: 100%;
+}
+
+
 
 /* ---- 메인 페이지 끝 ---- */
