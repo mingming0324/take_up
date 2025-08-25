@@ -1,5 +1,5 @@
 /* 노말라이즈 */
-body, ul, li, p{
+body, ul, li, span, p {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -135,13 +135,72 @@ a {
   color: #FF4D4D;
 }
 
+/* ---- 어플 소개 끝 ---- */
 
 
-/* 어플 소개 끝 */
-
-/* 온보딩 시작 */
+/* ---- 온보딩 시작 ---- */
 .sec_1-2 {
-  display: none;
+  position: relative;
+  height: 1265px;
+  overflow: hidden;
+  background-color: #2E2F34;
+  border: 5px solid antiquewhite;
 }
+
+.sec_1-2 > .onb-bg-img {
+  position: absolute;
+  width: 1300px;
+  height: 536px;
+  bottom: 0;
+  right: 0;
+}
+
+.sec_1-2 > .onb-bg-img > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec_1-2 .text-box {
+  margin-top: 114px;
+  margin-left: 236px;
+}
+
+.sec_1-2 .text-box > .onb-tag {
+  width: 80px;
+  height: 25px;
+  border: 2px solid #FF4D4D;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec_1-2 .text-box > .onb-tag > p {
+  font-size: 11px;
+  font-weight: 500;
+  color: #FF4D4D;
+}
+
+.sec_1-2 .text-box .onb-title {
+  margin-top: 19px;
+}
+
+.sec_1-2 .text-box .onb-title > span {
+  font-size: 45px;
+  font-weight: 600;
+  color: #FF4D4D;
+}
+
+.sec_1-2 .text-box .onb-sub {
+  margin-top: 16px;
+}
+
+.sec_1-2 .text-box .onb-sub > p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
 
 /* 온보딩 끝 */
