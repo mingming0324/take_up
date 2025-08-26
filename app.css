@@ -607,9 +607,71 @@ html, body {
   line-height: 1.5;
   color: #DBDBDB;
 }
-
-
-
-
-
 /* ---- 메인 페이지 끝 ---- */
+
+/* ---- 즐겨찾기 시작 ---- */
+.sec_1-4 {
+  position: relative;
+  height: 1260px;
+  background-color: #2E2F34;
+  border: 3px solid aliceblue;
+}
+
+.fav-con {
+  width: 1440px;
+  margin: 0 auto;
+  margin-top: 150px;
+  border: 3px solid gold;
+}
+
+.fav-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fav-img-box {
+  width: 685px;
+  height: auto;
+}
+
+.fav-img-box > img {
+  display: block;
+  width: 100%;
+}
+
+.f-text-box > .main-tag {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 5px 11px;
+  border: 2px solid #FF4D4D;
+  border-radius: 3px;
+}
+
+.f-text-box > .main-tag > p {
+  font-size: 11px;
+  font-weight: 600;
+  color: #FF4D4D;
+}
+
+.f-text-box .main-title {
+  margin-top: 32px;
+  color: #FF4D4D;
+}
+
+.f-text-box .main-title > span {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.f-text-box .main-sub {
+  margin-top: 19px;
+  white-space: nowrap;
+}
+
+.f-text-box .main-sub > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #F6F8FD;
+}
+/* ---- 즐겨찾기 끝 ---- */
