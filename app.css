@@ -729,6 +729,30 @@ html, body {
 /* ---- 즐겨찾기 끝 ---- */
 
 
+/* ---- 매장 혼잡도 안내 시작 ---- */
+.sec_1-6 {
+  position: relative;
+  height: 1348px;
+  padding-top: 330px;
+  background-color: #2E2F34;
+  border: 3px solid antiquewhite
+}
+
+.sec_1-6 .bg-img-box {
+  width: 1795px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.sec_1-6 > .bg-img-box > img {
+  display: block;
+  width: 100%;
+}
+
+
+/* ---- 매장 혼잡도 안내 끝 ---- */
+
+
 
 
 
