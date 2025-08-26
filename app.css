@@ -614,14 +614,13 @@ html, body {
   position: relative;
   height: 1260px;
   background-color: #2E2F34;
-  border: 3px solid aliceblue;
 }
 
 .fav-con {
+  position: relative;
   width: 1440px;
   margin: 0 auto;
-  margin-top: 150px;
-  border: 3px solid gold;
+  padding-top: 150px;
 }
 
 .fav-top {
@@ -674,4 +673,57 @@ html, body {
   line-height: 1.5;
   color: #F6F8FD;
 }
+
+.fav-down-box {
+  position: absolute;
+  width: 685px;
+  height: auto;
+  top: 390px;
+  right: 0;
+}
+
+.fav-down-box > img {
+  display: block;
+  width: 100%;
+}
+
+.sec_1-4 .intro-text {
+  white-space: nowrap;
+  margin-top: 49px;
+  margin-left: 97px;
+}
+
+.sec_1-4 .intro-text > span {
+  font-size: 24px;
+  color: #FF4D4D;
+}
+
+.sec_1-4 .intro-text > p {
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #CCCCCC;
+}
+
+.sec_1-4 .short-text {
+  position: absolute;
+  display: inline-block;
+  text-align: right;
+  top: 890px;
+  right: 755px;
+}
+
+.sec_1-4 .short-text > span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #888888;
+}
+
+.sec_1-4 .short-text > p {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #BCBCBC;
+}
+
 /* ---- 즐겨찾기 끝 ---- */
