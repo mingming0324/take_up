@@ -17,24 +17,18 @@ let main = gsap.timeline({
   }
 });
 
-main.to(".create_4", {
-  x: '0%',          
-  duration: 1.2,    
-  stagger: 0.2,    
-  opacity: 1     
-}, "+=.7");
-
 main.to(".create_16", {
-  x: '0%',          
-  duration: 1.2,    
+  duration: 1.2,      
   opacity: 1     
-}, "-=1.2");
+}, "+=1");
 
-main.to(".create_17", {  
+main.to(".create_17", {
+  x: '0%',          
   duration: 1.2,    
   stagger: 0.2,    
   opacity: 1     
-}, "-=.3");
+}, "-=.7");
+
 
 // sec-1 overview 텍스트 애니메이션
 // GSAP 타임라인 생성: 모든 애니메이션에 기본적으로 ease를 "power4.out"으로 설정
@@ -73,7 +67,7 @@ let tl_1 = gsap.timeline({
     onEnter: () => {   // ScrollTrigger가 ".sec-2" 섹션에 진입했을 때 실행되는 함수
       if (alreadyPlayed) return;  // 이미 재생한 적이 있으면 함수 종료 → 여러 번 재생되지 않게 막음
       alreadyPlayed = true;    // 처음 진입했음을 기록 → 이후엔 다시 실행되지 않도록 설정
- 
+
       videos.forEach(v => {  // .sec-2 안의 모든 <video> 요소를 하나씩 순회
         v.currentTime = 0;  // 비디오 시작 위치를 항상 0초(처음)으로 맞춤
         v.muted = true;     // 모바일/브라우저 자동재생 정책 때문에 무음으로 설정해야 재생됨
