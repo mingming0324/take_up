@@ -727,3 +727,79 @@ html, body {
 }
 
 /* ---- 즐겨찾기 끝 ---- */
+
+
+
+
+
+/* ---- 브랜드 정리 시작 ---- */
+.sec_1-10 {
+  position: relative;
+  height: 586px;
+  background-color: #2E2F34;
+}
+
+.sec_1-10 > .last-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 155px;
+}
+
+.sec_1-10 > .last-con > .logo-box {
+  width: 130px;
+  height: 130px;
+}
+
+.sec_1-10 > .last-con > .logo-box > img {
+  display: block;
+  width: 100%;
+}
+
+.sec_1-10 > .last-con > .text-con {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.sec_1-10 > .last-con > .text-con > .text {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.sec_1-10 > .last-con > .text-con .text-sub {
+  position: relative;
+  padding-left: 16px;
+  display: flex;
+}
+
+.sec_1-10 > .last-con > .text-con .text-sub .text {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.sec_1-10 > .last-con > .text-con .text-sub .img-box {
+  position: absolute;
+  width: 122px;
+  height: auto;
+  bottom: 11px;
+  right: 16px;
+}
+
+.sec_1-10 > .last-con > .text-con .text-sub .img-box > img {
+  display: block;
+  width: 100%;
+}
+
+/* ---- 브랜드 정리 끝 ---- */
