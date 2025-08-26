@@ -625,7 +625,7 @@ html, body {
 
 .fav-top {
   display: flex;
-  justify-content: space-between;
+  gap: 115px;
 }
 
 .fav-img-box {
@@ -678,7 +678,7 @@ html, body {
   position: absolute;
   width: 685px;
   height: auto;
-  top: 390px;
+  top: 500px;
   right: 0;
 }
 
@@ -709,7 +709,7 @@ html, body {
   position: absolute;
   display: inline-block;
   text-align: right;
-  top: 890px;
+  top: 990px;
   right: 755px;
 }
 
