@@ -738,15 +738,50 @@ html, body {
   border: 3px solid antiquewhite
 }
 
-.sec_1-6 .bg-img-box {
+/* .sec_1-6 .bg-img-box {
   width: 1795px;
   height: auto;
   margin: 0 auto;
+  z-index: 0;
 }
 
 .sec_1-6 > .bg-img-box > img {
   display: block;
   width: 100%;
+} */
+
+.sec_1-6 .store-text {
+  width: 1440px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.sec_1-6 .store-text > .store-tag {
+  display: inline-block;
+  border: 2px solid #FF4D4D;
+  border-radius: 3px;
+  padding: 5px 11px;
+}
+
+.sec_1-6 .store-text > .store-tag > p {
+  font-size: 11px;
+  font-weight: 600;
+  color: #FF4D4D;
+}
+
+.sec_1-6 .store-text .store-title {
+  margin-top: 28px;
+  font-size: 45px;
+  font-weight: 600;
+  color: #FF4D4D;
+}
+
+.sec_1-6 .store-text .store-sub {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #F6F8FD;
 }
 
 
