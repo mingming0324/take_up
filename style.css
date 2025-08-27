@@ -1165,9 +1165,27 @@ animation: zoomIn 1.2s ease-out  forwards;
     z-index: 2;
   }
 
-  .solution-img-box .solutin-img-2 {
-    width: 1445px;
-    height: 192px;
+  .solutin-box {
+    border: 2px solid var(--color-main);
+    background-color: var(--color-f0);
+    padding: 60px 268px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .solutin-box p {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-4B);
+    line-height: 34px;
+    letter-spacing: -1px;
+  }
+
+  .solutin-box p span {
+    font-weight: 600;
+    color: var(--color-main);
   }
     /* <!-- 프로젝트 골& 솔루션 끝 --> */
 
