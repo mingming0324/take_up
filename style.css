@@ -1685,7 +1685,7 @@ animation: zoomIn 1.2s ease-out  forwards;
       color: #565656;
     }
 
-    .watch_text-box .Smart-Watch {
+    .watch_text-box .Smart_Watch {
       font-size: 146px;
       font-weight: 700;
       color: #b0b0b1;
@@ -1694,4 +1694,44 @@ animation: zoomIn 1.2s ease-out  forwards;
     /* <!-- 워치 메인 끝 --> */
 
     /* <!-- 워치 픽업 시작 --> */
+    .sec-1-9 {
+      height: 1156px;
+      background-color: var(--color-background);
+    }
+
+    .sec-1-9_text-wrap {
+      height: 388px;
+      justify-content: center;
+      gap: 28px;
+    }
+
+    .sec-1-9_text-wrap .Smart-Watch {
+      color: var(--color-main);
+      border: 1px solid var(--color-main);
+      padding: 4px 6px;
+    }
+    .sec-1-9_text-wrap .sec-1-9_text-box {
+      gap: 18px;
+    }
+    .sec-1-9_text-wrap .sec-1-9_text-box .s-watch_title {
+      font-size: 45px;
+      font-weight: 700;
+      color: var(--color-main);
+    }
+
+    .sec-1-9_text-wrap .sec-1-9_text-box .s-watch_text {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--color-f0);
+    }
+
+    .watch-img-box {
+      justify-content: center;
+      align-items: center;
+      gap: 52px;
+    }
+
+    .watch-img-box .watch-m {
+      margin: 0 22px;
+    }
     /* <!-- 워치 픽업 끝 --> */
