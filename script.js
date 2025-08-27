@@ -352,8 +352,13 @@ let tl_7 = gsap.timeline({
 
 tl_7.to(text, {
   duration: 2,
- text: content,
- ease: "none"
+//  text: content,
+//  ease: "none"
+text: {
+  value: content,
+  delimiter: "" // 글자 단위가 아니라 문자 단위로
+},
+ease: "power1.inOut"
 });
 
 tl_7.to(".create_10", {
@@ -363,10 +368,6 @@ tl_7.to(".create_10", {
 });
 
 // sec-11 디자인 시스템 애니메이션
-// let text2 = document.querySelector(".design-st_img-text-2 > p");
-// let content2 = text2.textContent;
-// text2.textContent = ""; // 처음엔 비워두기
-
 let tl_8 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-11",       
@@ -381,19 +382,19 @@ let tl_8 = gsap.timeline({
 });
 
 tl_8.to(".create_11", {
-  x: '0%',          
+  y: '0%',          
   duration: 1.2,    
   opacity: 1
 });
 
 tl_8.to(".create_12", {
-  x: '0%',          
+  y: '0%',          
   duration: 1.2,    
   opacity: 1
 }, "-=.5");
 
 tl_8.to(".create_13", {
-  x: '0%',          
+  y: '0%',          
   duration: 1.2,    
   opacity: 1
 }, "-=.5");
