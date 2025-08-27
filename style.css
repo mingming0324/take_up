@@ -1647,3 +1647,51 @@ animation: zoomIn 1.2s ease-out  forwards;
       transform: translateX(-50%);
     }
     /* <!-- 와이어프레임 끝 --> */
+
+    /* <!-- 워치 메인 시작 --> */
+    .sec-1-8 {
+      height: 1083px;
+      background-color: var(--color-background);
+      position: relative;
+    }
+    .watch_back-img {
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .watch_top-line {
+      position: absolute;
+      top: 651px;
+      left: 840px;
+      z-index: 1;
+    }
+    .watch {
+      position: absolute;
+      top: 140px;
+      left: 590px;
+    }
+
+    .watch_text-box {
+      position: absolute;
+      flex-direction: column;
+      top: 95px;
+      left: 310px;
+      gap: 380px;
+    }
+    .watch_text-box .Available {
+      font-size: 168px;
+      font-weight: 800;
+      line-height: 135px;
+      color: #565656;
+    }
+
+    .watch_text-box .Smart-Watch {
+      font-size: 146px;
+      font-weight: 700;
+      color: #b0b0b1;
+      margin-left: 525px;
+    }
+    /* <!-- 워치 메인 끝 --> */
+
+    /* <!-- 워치 픽업 시작 --> */
+    /* <!-- 워치 픽업 끝 --> */
