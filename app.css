@@ -725,8 +725,148 @@ html, body {
   line-height: 1.4;
   color: #BCBCBC;
 }
-
 /* ---- 즐겨찾기 끝 ---- */
+
+/* ---- 상세페이지 시작 ---- */
+.sec_1-5 {
+  position: relative;
+  height: 1283px;
+  background-color: #2E2F34;
+  border: 3px solid aqua;
+}
+
+.sec_1-5 > .order-text {
+  width: 1440px;
+  margin: 0 auto;
+  text-align: right;
+  padding-top: 189px;
+}
+
+.sec_1-5 > .order-text > .order-tag {
+  display: inline-block;
+  padding: 5px 11px;
+  border: 2px solid #FF4D4D;
+  border-radius: 3px;
+}
+
+.sec_1-5 > .order-text > .order-tag > p {
+  font-size: 11px;
+  font-weight: 600;
+  color: #FF4D4D
+}
+
+.sec_1-5 > .order-text > .order-title {
+  margin-top: 32px;
+  font-size: 45px;
+  font-weight: 600;
+  color: #FF4D4D;
+}
+
+.sec_1-5 > .order-text > .order-sub {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f0f0f0;
+  margin-top: 19px;
+  line-height: 1.5;
+}
+
+.sec_1-5 > .order-content {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+  border: 3px solid gold;
+}
+
+.order-content > .order-img {
+  display: flex;
+  width: 420px;
+  height: auto;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.order-content > .order-img > img {
+  display: block;
+  width: 100%;
+}
+
+.order-content > .order-img > .left-con {
+  display: flex;
+  margin-top: 278px;
+}
+
+.order-content > .order-img > .left-con > .dot-img {
+  width: 100px;
+  height: auto;
+  top: 280px;
+  left: 410px;
+  margin-top: 4px;
+}
+
+.order-content > .order-img > .left-con > .dot-img > img {
+  display: block;
+  width: 100%;
+}
+
+.order-content > .order-img > .left-con .order-text {
+  margin-left: 16px;
+}
+
+.order-content .left-con .order-text .title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #FF4D4D;
+}
+
+.order-content .left-con .order-text .sub {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #DBDBDB;
+}
+
+.order-content .o-text {
+  position: absolute;
+  display: flex;
+  margin-left: 414px;
+  bottom: 116px;
+  border: 3px solid orangered;
+}
+
+.order-content .o-text > .o-dot {
+  width: 110px;
+  height: auto;
+  margin-top: 4px;
+  margin-right: 12px;
+}
+
+.order-content .o-text > .o-dot > img {
+  display: block;
+  width: 100%;
+}
+
+.order-content .o-text > .text-con {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-content .o-text > .text-con > .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #BCBCBC
+}
+
+.order-content .o-text > .text-con > .sub {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #888888;
+}
+
+
+
+/* ---- 상세페이지 끝 ---- */
 
 
 /* ---- 매장 혼잡도 안내 시작 ---- */
