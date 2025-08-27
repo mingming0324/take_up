@@ -96,6 +96,16 @@ a {
   display: inline-block;
 }
 
+.tag > p {
+  color: #FF4D4D;
+}
+
+.tag-box {
+  border: 2px solid var(--color-main);
+  padding: 4px 11px;
+  border-radius: 3px;
+}
+
 .create_0 {
   transform: translateX(100%);
   opacity: 0;
@@ -1791,42 +1801,34 @@ animation: zoomIn 1.2s ease-out  forwards;
   object-fit: cover;
 }
 
-.sec_1-2 .text-box {
+.sec_1-2 .onb_text-box {
   padding-top: 114px;
   margin-left: 236px;
 }
 
-.sec_1-2 .text-box > .onb-tag {
-  width: 80px;
-  height: 25px;
-  border: 2px solid #FF4D4D;
-  border-radius: 3px;
+.sec_1-2 .onb_text-box > .onb-tag {
+  width: 82px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sec_1-2 .text-box > .onb-tag > p {
-  font-size: 11px;
-  font-weight: 500;
-  color: #FF4D4D;
-}
 
-.sec_1-2 .text-box .onb-title {
+.sec_1-2 .onb_text-box .onb-title {
   margin-top: 19px;
 }
 
-.sec_1-2 .text-box .onb-title > span {
+.sec_1-2 .onb_text-box .onb-title > span {
   font-size: 45px;
   font-weight: 600;
   color: #FF4D4D;
 }
 
-.sec_1-2 .text-box .onb-sub {
+.sec_1-2 .onb_text-box .onb-sub {
   margin-top: 16px;
 }
 
-.sec_1-2 .text-box .onb-sub > p {
+.sec_1-2 .onb_text-box .onb-sub > p {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
@@ -1995,54 +1997,48 @@ animation: zoomIn 1.2s ease-out  forwards;
 }
 
 /* -- 상단 텍스트 -- */
-.main-text-box {
+.main-text-box-2 {
   width: 1400px;
   padding-top: 122px;
   margin: 0 auto;
 }
 
-.main-text-box > .main-tag {
+.main-text-box-2 > .main-tag {
   display: inline-block;
-  padding: 5px 11px;
-  border-radius: 3px;
-  border: 2px solid #FF4D4D;
+
 }
 
-.main-text-box > .main-tag > p {
-  font-size: 11px;
-  font-weight: 600;
-  color: #FF4D4D;
-}
 
-.main-text-box > .main-text {
+
+.main-text-box-2 > .main-text {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.main-text-box .main-title {
+.main-text-box-2 .main-title {
   color: #FF4D4D;
   margin-top: 32px;
 }
 
-.main-text-box .main-title > span {
+.main-text-box-2 .main-title > span {
   font-size: 45px;
   font-weight: 600;
 }
 
-.main-text-box .main-sub {
+.main-text-box-2 .main-sub {
   text-align: right;
   color: #EEEEEE;
   margin-top: 32px;
 }
 
-.main-text-box .main-sub > p {
+.main-text-box-2 .main-sub > p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
 }
 
-.main-text-box .main-sub .bold {
+.main-text-box-2 .main-sub .bold {
   color: #FFFFFF;
   font-weight: 600;
 }
@@ -2240,16 +2236,10 @@ animation: zoomIn 1.2s ease-out  forwards;
 .f-text-box > .main-tag {
   display: inline-block;
   margin-top: 50px;
-  padding: 5px 11px;
-  border: 2px solid #FF4D4D;
-  border-radius: 3px;
+
 }
 
-.f-text-box > .main-tag > p {
-  font-size: 11px;
-  font-weight: 600;
-  color: #FF4D4D;
-}
+
 
 .f-text-box .main-title {
   margin-top: 32px;
@@ -2329,9 +2319,8 @@ animation: zoomIn 1.2s ease-out  forwards;
 /* ---- 상세페이지 시작 ---- */
 .sec_1-5 {
   position: relative;
-  height: 1283px;
+  height: 3891px;
   background-color: #2E2F34;
-  border: 3px solid aqua;
 }
 
 .sec_1-5 > .order-text {
@@ -2343,15 +2332,6 @@ animation: zoomIn 1.2s ease-out  forwards;
 
 .sec_1-5 > .order-text > .order-tag {
   display: inline-block;
-  padding: 5px 11px;
-  border: 2px solid #FF4D4D;
-  border-radius: 3px;
-}
-
-.sec_1-5 > .order-text > .order-tag > p {
-  font-size: 11px;
-  font-weight: 600;
-  color: #FF4D4D
 }
 
 .sec_1-5 > .order-text > .order-title {
@@ -2373,18 +2353,19 @@ animation: zoomIn 1.2s ease-out  forwards;
   position: relative;
   width: 1440px;
   margin: 0 auto;
-  border: 3px solid gold;
 }
 
 .order-content > .order-img {
   display: flex;
-  width: 420px;
-  height: auto;
   white-space: nowrap;
   z-index: 10;
 }
 
-.order-content > .order-img > img {
+.order-content > .order-img .left-img {
+  width: 420px;
+}
+
+.order-content > .order-img img {
   display: block;
   width: 100%;
 }
@@ -2392,6 +2373,7 @@ animation: zoomIn 1.2s ease-out  forwards;
 .order-content > .order-img > .left-con {
   display: flex;
   margin-top: 278px;
+  height: 146px;
 }
 
 .order-content > .order-img > .left-con > .dot-img {
@@ -2429,8 +2411,7 @@ animation: zoomIn 1.2s ease-out  forwards;
   position: absolute;
   display: flex;
   margin-left: 414px;
-  bottom: 116px;
-  border: 3px solid orangered;
+ bottom:  560px;
 }
 
 .order-content .o-text > .o-dot {
@@ -2463,8 +2444,68 @@ animation: zoomIn 1.2s ease-out  forwards;
   color: #888888;
 }
 
+.order-content .order-right {
+  justify-content: end;
+  position: relative;
+  bottom: 420px;
+}
 
+.order-content .order-right .right-img {
+  width: 636px;
+}
 
+.order-content .order-right .right-img img {
+  display: block;
+  width: 100%;
+}
+
+ .link_dot-img {
+  width: 936px;
+  height: 521px;
+  top: 1150px;
+  left: 600px;
+  position: absolute;
+}
+
+.link_dot-img > img {
+  display: block;
+  width: 100%;
+} 
+
+.order-chack {
+  width: 1440px;
+  margin: 50px auto;
+}
+
+.order-chack .order-chack_img-box {
+  width: 733px;
+}
+
+.order-chack .order-chack_img-box img {
+  display: block;
+  width: 100%;
+}
+.order-chack_text-box {
+  gap: 16px;
+  height: 126px;
+  margin-top: 50px;
+}
+.order-chack_text {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-chack_text .title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-main);
+}
+
+.order-chack_text .sub {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-f0);
+}
 /* ---- 상세페이지 끝 ---- */
 
 
@@ -2498,16 +2539,10 @@ animation: zoomIn 1.2s ease-out  forwards;
 
 .sec_1-6 .store-text > .store-tag {
   display: inline-block;
-  border: 2px solid #FF4D4D;
-  border-radius: 3px;
-  padding: 5px 11px;
+
 }
 
-.sec_1-6 .store-text > .store-tag > p {
-  font-size: 11px;
-  font-weight: 600;
-  color: #FF4D4D;
-}
+
 
 .sec_1-6 .store-text .store-title {
   margin-top: 28px;
@@ -2653,9 +2688,6 @@ animation: zoomIn 1.2s ease-out  forwards;
 
 .sec_1-7 > .my-text > .my-tag {
   display: inline-block;
-  border: 2px solid #FF4D4D;
-  border-radius: 3px;
-  padding: 5px 11px;
   font-size: 11px;
   font-weight: 600;
   color: #FF4D4D;
@@ -2830,8 +2862,6 @@ animation: zoomIn 1.2s ease-out  forwards;
 
     .sec-1-9_text-wrap .Smart-Watch {
       color: var(--color-main);
-      border: 1px solid var(--color-main);
-      padding: 4px 6px;
     }
     .sec-1-9_text-wrap .sec-1-9_text-box {
       gap: 18px;
@@ -2928,5 +2958,4 @@ animation: zoomIn 1.2s ease-out  forwards;
   display: block;
   width: 100%;
 }
-
 /* ---- 브랜드 정리 끝 ---- */
