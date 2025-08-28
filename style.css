@@ -2465,7 +2465,7 @@ animation: zoomIn 1.2s ease-out  forwards;
  .link_dot-img {
   width: 936px;
   height: 521px;
-  top: 1150px;
+  top: 1100px;
   left: 600px;
   position: absolute;
 }
@@ -2519,6 +2519,11 @@ animation: zoomIn 1.2s ease-out  forwards;
   width: 100%;
 }
 
+.order-cart_text-wrap {
+  flex-direction: column;
+  gap: 590px;
+}
+
 .order-cart .order-cart_text-box {
   height: 110px;
   gap: 16px;
@@ -2544,8 +2549,6 @@ animation: zoomIn 1.2s ease-out  forwards;
   gap: 12px;
   text-align: right;
 }
-
-
 
 .order-cart_brand-box {
   height: 254px;
