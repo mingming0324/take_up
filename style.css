@@ -2883,7 +2883,7 @@ animation: zoomIn 1.2s ease-out  forwards;
 .my-content .pg-con > .page-img-box .page-text {
   position: absolute;
   bottom: 72px;
-  right: 248px;
+  right: 280px;
 }
 
 .my-content .pg-con .page-text > .title {
