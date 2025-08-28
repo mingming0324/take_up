@@ -93,7 +93,6 @@ a {
 .title-name {
   font-size: 16px;
   font-weight: 600;
-  display: inline-block;
 }
 
 .tag > p {
@@ -140,6 +139,10 @@ a {
 }
 .timeline_wrap {
   overflow: hidden;
+}
+
+img {
+  width: 100%;
 }
  /* 라이브러리 끝 */
 
@@ -274,6 +277,7 @@ body::-webkit-scrollbar-track {
 }
 
 .sec-1_back-img {
+  width: 1808px;
   position: absolute;
   bottom: -340px;
   left: 50%;
@@ -388,7 +392,15 @@ body::-webkit-scrollbar-track {
     height: 438px;
     flex-direction: column;
     gap: 42px;
-  }
+  } 
+
+.desk-re-line-img {
+  height: 48px;
+}
+
+.desk-re-line-img-2 {
+  margin-top: 10px;
+}
 
   .desk-re_img-box .desk-re_user li {
     width: 768px;
@@ -531,9 +543,6 @@ animation: zoomIn 1.2s ease-out  forwards;
     z-index: 0;
   }
 
-  .user-re_back-img img {
-    width: 100%;
-  }
   .sec-4_text-wrap {
     justify-content: center;
     height: 414px;
@@ -586,6 +595,7 @@ animation: zoomIn 1.2s ease-out  forwards;
     background-color: var(--color-main);
     border-radius: 14px;
     padding: 20px 54px;
+    justify-content: center;
   }
   .sec-4_contents-wrap .user-re_content-box .user-re_span-box-3 {
     padding: 20px 51px;
@@ -596,6 +606,13 @@ animation: zoomIn 1.2s ease-out  forwards;
     color: var(--color-f0);
     text-align: center;
     white-space: nowrap;
+  }
+
+  .user-re_item-img {
+    width: 15px;
+    height: 12px;
+    margin-top: 6px;
+    margin-right: 6px;
   }
 
   .sec-4_contents-wrap .user-re_content-box .user-re_item-text {
@@ -623,6 +640,11 @@ animation: zoomIn 1.2s ease-out  forwards;
   .sec-5_text-box .persona {
     font-size: 28px;
     color: var(--color-f0);
+  }
+
+  .sec-5_text-box .persona img {
+    width: 20px;
+    height: 20px;
   }
 
   .perso_content-box .perso_content-item {
@@ -876,9 +898,6 @@ animation: zoomIn 1.2s ease-out  forwards;
     height: 570px;
   }
 
-  .usab-te_img-box .usab-te_img-item .usab-te_img-item-img img {
-    width: 100%;
-  }
     /* <!-- 프로토타입 테스팅 끝 --> */
 
     /* <!-- 벤치마킹 시작 --> */
@@ -1154,8 +1173,9 @@ animation: zoomIn 1.2s ease-out  forwards;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 604px;
+    top: 612px;
     z-index: 0;
+    width: 2277px;
   }
 
   .solution-img-box {
@@ -1594,7 +1614,8 @@ animation: zoomIn 1.2s ease-out  forwards;
     }
 
     .flow-ch_img-box {
-      justify-content: center;
+      margin: 0 auto;
+      width: 1440px;
     }
 
     .animate__pulse {
@@ -1655,6 +1676,7 @@ animation: zoomIn 1.2s ease-out  forwards;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
+      width: 1704px;
     }
     /* <!-- 와이어프레임 끝 --> */
 
@@ -2319,7 +2341,6 @@ animation: zoomIn 1.2s ease-out  forwards;
 /* ---- 상세페이지 시작 ---- */
 .sec_1-5 {
   position: relative;
-  height: 3891px;
   background-color: #2E2F34;
 }
 
@@ -2363,11 +2384,6 @@ animation: zoomIn 1.2s ease-out  forwards;
 
 .order-content > .order-img .left-img {
   width: 420px;
-}
-
-.order-content > .order-img img {
-  display: block;
-  width: 100%;
 }
 
 .order-content > .order-img > .left-con {
@@ -2455,11 +2471,6 @@ animation: zoomIn 1.2s ease-out  forwards;
 
 .order-content .order-right .right-img {
   width: 636px;
-}
-
-.order-content .order-right .right-img img {
-  display: block;
-  width: 100%;
 }
 
  .link_dot-img {
@@ -2570,17 +2581,57 @@ animation: zoomIn 1.2s ease-out  forwards;
   width: 340px;
 }
 
-.order-cart_brand-text .order-cart_brand-img img {
-  display: block;
-  width: 100%;
-}
-
 .order-cart_brand-box .order-cart_brand-text .sub {
   font-size: 14px;
   font-weight: 500;
   color: #888;
   letter-spacing: -1px;
   margin: 5px 0 0 20px;
+}
+
+.link_dot-img-2 {
+  width: 282px;
+  position: absolute;
+  left: 630px;
+  bottom: 450px;
+}
+
+.order-pay {
+  width: 1440px;
+  margin: 50px auto 0;
+  justify-content: center;
+  padding-right: 180px;
+}
+
+.order-pay .order-pay_img-box {
+  width: 440px;
+}
+
+.order-pay .order-pay_img-box img {
+  display: block;
+  width: 100%;
+}
+
+.order-pay_text-box {
+  gap: 16px;
+  height: 110px;
+  margin-top: 140px;
+}
+
+.order-pay_text-box .order-pay_bot-box {
+  width: 98px;
+  height: 10px;
+  margin-top: 8px;
+}
+
+.order-pay_text-box .order-pay_bot-box img {
+  display: block;
+  width: 100%;
+}
+
+.order-pay_text-box .order-pay_text {
+  flex-direction: column;
+  gap: 12px;
 }
 /* ---- 상세페이지 끝 ---- */
 
@@ -2892,14 +2943,16 @@ animation: zoomIn 1.2s ease-out  forwards;
     }
     .watch_top-line {
       position: absolute;
-      top: 651px;
+      top: 650px;
       left: 840px;
       z-index: 1;
+      width: 190px;
     }
     .watch {
       position: absolute;
       top: 140px;
       left: 590px;
+      width: 618px;
     }
 
     .watch_text-box {
@@ -2928,6 +2981,7 @@ animation: zoomIn 1.2s ease-out  forwards;
     .sec-1-9 {
       height: 1156px;
       background-color: var(--color-background);
+      overflow: hidden;
     }
 
     .sec-1-9_text-wrap {
@@ -2962,6 +3016,10 @@ animation: zoomIn 1.2s ease-out  forwards;
 
     .watch-img-box .watch-m {
       margin: 0 22px;
+    }
+
+    .watch-img-box .watch-m img {
+      width: 376px;
     }
     /* <!-- 워치 픽업 끝 --> */
 
