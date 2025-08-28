@@ -115,12 +115,12 @@ a {
   opacity: 0;
 }
 
-.create_2, .create_3, .create_4, .create_8, .create_9, .create_10 {
+.create_2, .create_3, .create_4, .create_8, .create_9, .create_10, .create_21 {
   transform: translateY(-100%);
   opacity: 0;
 }
 
-.create_7, .create_19  {
+.create_7, .create_19, .create_22  {
   transform: translateX(-100%);
   opacity: 0;
 }
