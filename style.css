@@ -2340,6 +2340,8 @@ animation: zoomIn 1.2s ease-out  forwards;
 .sec_1-5 {
   position: relative;
   background-color: #2E2F34;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .sec_1-5 > .order_title-text {
@@ -2474,7 +2476,7 @@ animation: zoomIn 1.2s ease-out  forwards;
  .link_dot-img {
   width: 936px;
   height: 521px;
-  top: 1100px;
+  top: 1150px;
   left: 600px;
   position: absolute;
 }
@@ -2631,6 +2633,15 @@ animation: zoomIn 1.2s ease-out  forwards;
   flex-direction: column;
   gap: 12px;
 }
+
+.sec_1-5_back-img {
+  position: absolute;
+  width: 2210px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1200px;
+  z-index: -1;
+}
 /* ---- 상세페이지 끝 ---- */
 
 
@@ -2645,6 +2656,8 @@ animation: zoomIn 1.2s ease-out  forwards;
 .sec_1-6 .bg-img-box {
   position: absolute;
   width: 1795px;
+  left: 50%;
+  transform: translateX(-50%);
   height: auto;
   margin: 0 auto;
   z-index: 0;
@@ -2664,10 +2677,7 @@ animation: zoomIn 1.2s ease-out  forwards;
 
 .sec_1-6 .store-text > .store-tag {
   display: inline-block;
-
 }
-
-
 
 .sec_1-6 .store-text .store-title {
   margin-top: 28px;
