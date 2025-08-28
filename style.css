@@ -110,8 +110,6 @@ a {
   opacity: 0;
 }
 
-
-
 .create, .create_1, .create_5, .create_11, .create_12, .create_13 {
   transform: translateY(100%);
   opacity: 0;
@@ -2362,7 +2360,7 @@ animation: zoomIn 1.2s ease-out  forwards;
   color: #FF4D4D;
 }
 
-.sec_1-5 > .order_title-ext > .order-sub {
+.sec_1-5 > .order_title-text > .order-sub {
   font-size: 18px;
   font-weight: 500;
   color: #f0f0f0;
@@ -2815,8 +2813,6 @@ animation: zoomIn 1.2s ease-out  forwards;
 
 .sec_1-7 > .my-text > .my-tag {
   display: inline-block;
-  font-size: 11px;
-  font-weight: 600;
   color: #FF4D4D;
   margin-top: 95px;
 }
@@ -2992,10 +2988,13 @@ animation: zoomIn 1.2s ease-out  forwards;
 
     .sec-1-9_text-wrap .Smart-Watch {
       color: var(--color-main);
+      display: inline-block;
     }
+
     .sec-1-9_text-wrap .sec-1-9_text-box {
       gap: 18px;
     }
+
     .sec-1-9_text-wrap .sec-1-9_text-box .s-watch_title {
       font-size: 45px;
       font-weight: 700;
