@@ -2309,7 +2309,7 @@ animation: zoomIn 1.2s ease-out  forwards;
 
 .sec_1-4 .intro-text > p {
   margin-top: 16px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
   color: #CCCCCC;
 }
@@ -2330,7 +2330,7 @@ animation: zoomIn 1.2s ease-out  forwards;
 
 .sec_1-4 .short-text > p {
   margin-top: 6px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4;
   color: #BCBCBC;
 }
