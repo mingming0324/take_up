@@ -120,6 +120,11 @@ a {
   opacity: 0;
 }
 
+.create_23 {
+  opacity: 0;
+  transform: translateY(30%);
+}
+
 .create_7, .create_19, .create_22  {
   transform: translateX(-100%);
   opacity: 0;

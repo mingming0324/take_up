@@ -525,13 +525,11 @@ tl_16.to(".create_20", {
 },);
 // "+=.3"
 
-// 메인페이지 - .order-dot 애니메이션
 let tl_17 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec_1-3",         // 이 섹션이 화면에 등장하면 애니메이션 시작
     start: "top 10%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
-    toggleActions: "play none none none" ,
-    // └ 스크롤 방향과 관계없이 1번만 재생
+    toggleActions: "play none none none" ,  // 스크롤 방향과 관계없이 1번만 재생
     markers: true // 화면에 start/end 위치 보이게 함
   },
   
@@ -541,33 +539,23 @@ let tl_17 = gsap.timeline({
 
 });
 
-tl_17.to(".create_21", {
+tl_17.to(".create_23", {
   y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
   duration: 1.2,     // 각 요소의 애니메이션 지속 시간: 1.2초
   stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
   opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
-},);
+})
 
-
-// 메인페이지 - .order-text 애니메이션
-let tl_18 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".sec_1-3",         // 이 섹션이 화면에 등장하면 애니메이션 시작
-    start: "top 10%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
-    toggleActions: "play none none none" ,
-    // └ 스크롤 방향과 관계없이 1번만 재생
-    markers: true // 화면에 start/end 위치 보이게 함
-  },
-  
-  defaults: {
-    ease: "power4.out" // 애니메이션 속도 곡선: 느리게 시작 → 빠르게 → 부드럽게 감속
-  }
-
-});
-
-tl_17.to(".create_22", {
-  x: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
+.to(".create_21", {
+  y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
   duration: 1.2,     // 각 요소의 애니메이션 지속 시간: 1.2초
   stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
-  opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
-},);
+  opacity: 1
+}, '>.2')
+
+.to(".create_22", {
+  x: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
+  duration: 1.2,     // 각 요소의 애니메이션 지속 시간: 1.2초
+  stagger: 0.5,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
+  opacity: 1
+}, '>.2');
