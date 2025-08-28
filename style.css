@@ -1732,21 +1732,21 @@ animation: zoomIn 1.2s ease-out  forwards;
 
 /* -- intro-left -- */
 .intro-container > .intro-left {
-  margin-top: 170px;
+  margin-top: 230px;
   white-space: nowrap;
 }
 
 .intro-container > .intro-left > .choice-text {
   font-size: 100px;
   font-weight: 500;
-  margin-left: 240px;
+  margin-left: 290px;
   color: #B7B7B7;
 }
 
 .intro-container > .intro-left > .pickup-text {
   font-size: 140px;
   font-weight: 500;
-  margin-left: 110px;
+  margin-left: 180px;
   color: #D34748;
 }
 

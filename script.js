@@ -436,3 +436,20 @@ tl_9.to(".create_15", {
     });
   }
 });
+
+//sec-14 와이어프레임 애니메이션 없음
+
+
+//sec-1-1 어플 시작 애니메이션 
+let tl_10 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-1-1",       
+    start: "top 40%",      
+    toggleActions: "play none none none" ,     
+    // markers: true,
+  },
+
+  defaults: {
+    ease: "power4.out" 
+  }
+});
