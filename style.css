@@ -1702,7 +1702,7 @@ table {
   bottom: 0;
   right: 0px;
   width: 100%;
-  height: auto;
+  height: 826px;
 }
 
 .sec_1-1 .app-bg-img img {
@@ -1714,17 +1714,58 @@ table {
   max-width: none;
 }
 
-.sec_1-1 .app-arc-img > img {
-  position: absolute;
-  bottom: 0;
-  right: 345px;
-  width: 1655px;
-  height: auto;
-  object-fit: cover;
-  will-change: transform;
-  transform-origin: 50% 50%;
+.app-arc-img-box {
+ justify-content: center;
+ position: absolute;
+ top: 0;
+right: 350px;
+width: 100%;
+height: 100%;
 }
 
+.sec_1-1 .app-arc-img {
+position: absolute;
+top: 0;
+
+}
+
+.sec_1-1 .app-arc-img-1 {
+  width: 1655px;
+  height: 1655px;
+  border-radius: 50%;
+animation-name: wave_2;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+.sec_1-1 .app-arc-img-2 {
+  width: 1380px;
+  height: 1380px;
+  margin-top: 136px;
+  border-radius: 50%;
+animation-name: wave_2;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+.sec_1-1 .app-arc-img-3 {
+  width: 1108px;
+  height: 1108px;
+  margin-top: 272px;
+  border-radius: 50%;
+animation-name: wave_2;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+
+@keyframes wave_2 {
+  0% {box-shadow: 0 0 0px 0px rgba(255, 77, 77, 0.3);}
+  100% {box-shadow: 0 0 0px 15px rgba(255, 77, 77, 0);}
+}
 .intro-container {
   position: relative;
   display: flex;

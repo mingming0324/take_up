@@ -454,13 +454,7 @@ let tl_10 = gsap.timeline({
   }
 });
 tl_10.to(".app-arc-img", {
-  y: -12,            // 위아래
-  rotation: 1.2,     // 살짝 기울기
-  scale: 1,       // 아주 미세한 스케일로 물결 느낌
-  duration: 3,
-  yoyo: true,
-  repeat: -1,
-  ease: "sine.inOut"     
+
 });
 
 tl_10.to(".create_48", {
