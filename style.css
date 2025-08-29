@@ -115,7 +115,7 @@ a {
   opacity: 0;
 }
 
-.create_2, .create_3, .create_4, .create_8, .create_9, .create_10, .create_21 {
+.create_2, .create_3, .create_4, .create_8, .create_9, .create_10, .create_21, .create_22 {
   transform: translateY(-100%);
   opacity: 0;
 }
@@ -125,7 +125,12 @@ a {
   transform: translateY(30%);
 }
 
-.create_7, .create_19, .create_22  {
+.create_24 {
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+.create_7, .create_19, .create_26, .create_25  {
   transform: translateX(-100%);
   opacity: 0;
 }
@@ -136,10 +141,12 @@ a {
 .create_16 {
   opacity: 0;
 }
+
 .create_17 {
   transform: translateX(100%);
   opacity: 0;
 }
+
 .timeline_wrap {
   overflow: hidden;
 }
@@ -2061,13 +2068,13 @@ table {
   width: 100%;
 }
 
-.menu-con .menu-text > span {
+.menu-con .menu-text span {
   font-size: 26px;
   font-weight: 600;
   color: #FF4D4D;
 }
 
-.menu-con .menu-text > p {
+.menu-con .menu-text p {
   margin-top: 16px;
   font-size: 16px;
   font-weight: 500;
@@ -2131,15 +2138,20 @@ table {
   width: 100%;
 }
 
-.order-con .order-text > span {
+.order-con .order-text-fl {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+}
+
+.order-con .order-text-fl span {
   display: block;
   font-size: 26px;
   font-weight: 600;
-  margin-top: 110px;
   color: #FF4D4D;
 }
 
-.order-con .order-text > p {
+.order-con .order-text-fl p {
   margin-top: 16px;
   font-size: 16px;
   font-weight: 500;
