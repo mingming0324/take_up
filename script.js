@@ -493,18 +493,74 @@ tl_11.to(".create_30", {
   opacity: 1        
 }, "-=1");
 
-// 즐겨찾기 텍스트 애니메이션
-let tl_13 = gsap.timeline({
+// sec_1-3 메인 애니메이션 - 오른쪽
+let tl_16= gsap.timeline({
   scrollTrigger: {
-    trigger: ".sec_1-4",         // 이 섹션이 화면에 등장하면 애니메이션 시작
-    start: "top 50%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
-    toggleActions: "play none none none" ,
-    // └ 스크롤 방향과 관계없이 1번만 재생
-    // markers: true // 화면에 start/end 위치 보이게 함
+    trigger: ".sec_1-3",       
+    start: "top 10%",      
+    toggleActions: "play none none none" , 
+    // markers: true 
   },
   
   defaults: {
-    ease: "power4.out" // 애니메이션 속도 곡선: 느리게 시작 → 빠르게 → 부드럽게 감속
+    ease: "power4.out" 
+  }
+
+});
+
+tl_16.to(".create_23", {
+  y: '0%',       
+  duration: 1.2,  
+  stagger: 0.2,      
+  opacity: 1    
+})
+
+tl_16.to(".create_21", {
+  y: '0%',          
+  duration: 0.6,    
+  stagger: 0.2,  
+  opacity: 1
+}, '-=.5')
+
+tl_16.to(".create_22", {
+  y: '0%',         
+  duration: 0.8,    
+  opacity: 1
+}, '>.2');
+
+// 메인 애니메이션 - 왼쪽
+tl_16.to(".create_24", {
+  y: '0%',     
+  duration: 1.2,  
+  stagger: 0.2,   
+  opacity: 1       
+});
+
+tl_16.to(".create_25", {
+  x: '0%',      
+  duration: 0.6,     
+  stagger: 0.2,     
+  opacity: 1
+});
+
+tl_16.to(".create_26", {
+  x: '0%',        
+  duration: 0.8,   
+  stagger: 0.5,   
+  opacity: 1
+});
+
+// sec_1-4 즐겨찾기 텍스트 애니메이션
+let tl_13 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec_1-4",        
+    start: "top 50%",        
+    toggleActions: "play none none none" ,
+    // markers: true 
+  },
+  
+  defaults: {
+    ease: "power4.out" 
   }
 
 });
@@ -604,105 +660,30 @@ tl_14.to(".create_41", {
 // sec_1-6 매장 혼잡도 텍스트 애니메이션
 let tl_15 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".sec_1-6 .search-right",         // 이 섹션이 화면에 등장하면 애니메이션 시작
-    start: "top+=200 center",          // 섹션의 'top'이 중앙에 오되, 200px 더 내려온 후 실행
-    toggleActions: "play none none none" ,  // 스크롤 방향과 관계없이 1번만 재생
-    markers: true
+    trigger: ".sec_1-6 .search-right",        
+    start: "top+=200 center",    
+    toggleActions: "play none none none" ,  
+    // markers: true
   },
   
   defaults: {
-    ease: "power4.out" // 애니메이션 속도 곡선: 느리게 시작 → 빠르게 → 부드럽게 감속
+    ease: "power4.out" 
   }
 });
 
 tl_15.to(".create_42", {
-  x: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
-  duration: 1.2,     // 각 요소의 애니메이션 지속 시간: 1.2초
-  // stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
-  opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
+  x: '0%',         
+  duration: 1.2,     
+  opacity: 1    
 })
 
 .to(".create_43", {
-  x: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
-  duration: 0.6,     // 각 요소의 애니메이션 지속 시간: 1.2초
-  // stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
+  x: '0%',        
+  duration: 0.6,    
   opacity: 1
 }, '-=.5');
 
-
-// 메인 애니메이션 - 오른쪽
-let tl_16= gsap.timeline({
-  scrollTrigger: {
-    trigger: ".sec_1-3",         // 이 섹션이 화면에 등장하면 애니메이션 시작
-    start: "top 10%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
-    toggleActions: "play none none none" ,  // 스크롤 방향과 관계없이 1번만 재생
-    // markers: true // 화면에 start/end 위치 보이게 함
-  },
-  
-  defaults: {
-    ease: "power4.out" // 애니메이션 속도 곡선: 느리게 시작 → 빠르게 → 부드럽게 감속
-  }
-
-});
-
-tl_16.to(".create_23", {
-  y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
-  duration: 1.2,     // 각 요소의 애니메이션 지속 시간: 1.2초
-  stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
-  opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
-})
-
-tl_16.to(".create_21", {
-  y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
-  duration: 0.6,     // 각 요소의 애니메이션 지속 시간: 1.2초
-  stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
-  opacity: 1
-}, '-=.5')
-
-tl_16.to(".create_22", {
-  y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
-  duration: 0.8,     // 각 요소의 애니메이션 지속 시간: 1.2초
-  // stagger: 0.5,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
-  opacity: 1
-}, '>.2');
-
-// 메인 애니메이션 - 왼쪽
-let tl_17 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".sec_1-3",         // 이 섹션이 화면에 등장하면 애니메이션 시작
-    start: "top 20%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
-    toggleActions: "play none none none" ,  // 스크롤 방향과 관계없이 1번만 재생
-    // markers: true // 화면에 start/end 위치 보이게 함
-  },
-  
-  defaults: {
-    ease: "power4.out" // 애니메이션 속도 곡선: 느리게 시작 → 빠르게 → 부드럽게 감속
-  }
-
-});
-
-tl_17.to(".create_24", {
-  y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
-  duration: 1.2,     // 각 요소의 애니메이션 지속 시간: 1.2초
-  stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
-  opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
-})
-
-tl_17.to(".create_25", {
-  x: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
-  duration: 0.6,     // 각 요소의 애니메이션 지속 시간: 1.2초
-  stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
-  opacity: 1
-}, '-=.5')
-
-tl_17.to(".create_26", {
-  x: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
-  duration: 0.8,     // 각 요소의 애니메이션 지속 시간: 1.2초
-  stagger: 0.5,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
-  opacity: 1
-}, '>.2');
-
-//sec-1-7  애니메이션 
+//sec-1-7  마이페이지 애니메이션 
 let tl_18 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec_1-7",       
@@ -740,7 +721,9 @@ tl_18.to(".create_47", {
   opacity: 1        
 }, "-=.5");
 
-// 워치 픽업 애니메이션
+// sec-1-8 메인 워치 애니메이션
+
+// sec-1-9 워치 픽업 애니메이션
 let tl_19 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-1-9",         // 이 섹션이 화면에 등장하면 애니메이션 시작
