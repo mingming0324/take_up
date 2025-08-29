@@ -481,7 +481,7 @@ tl_13.to(".create_18", {
 // 매장 혼잡도 텍스트 애니메이션
 let tl_15 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".sec_1-6",         // 이 섹션이 화면에 등장하면 애니메이션 시작
+    trigger: ".sec_1-6 .search-right",         // 이 섹션이 화면에 등장하면 애니메이션 시작
     start: "top+=200 center",          // 섹션의 'top'이 중앙에 오되, 200px 더 내려온 후 실행
     toggleActions: "play none none none" ,  // 스크롤 방향과 관계없이 1번만 재생
     markers: true
