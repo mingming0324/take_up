@@ -630,30 +630,8 @@ tl_15.to(".create_42", {
 }, '-=.5');
 
 
-// 워치 픽업 애니메이션
-let tl_16 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".sec-1-9",         // 이 섹션이 화면에 등장하면 애니메이션 시작
-    start: "top 60%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
-    toggleActions: "play none none none" ,
-    // markers: true 
-  },
-  
-  defaults: {
-    ease: "power4.out" // 애니메이션 속도 곡선: 느리게 시작 → 빠르게 → 부드럽게 감속
-  }
-});
-
-tl_16.to(".create_20", {
-  y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
-  duration: 1.2,     // 각 요소의 애니메이션 지속 시간: 1.2초
-  stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
-  opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
-});
-// "+=.3"
-
 // 메인 애니메이션 - 오른쪽
-let tl_17 = gsap.timeline({
+let tl_16= gsap.timeline({
   scrollTrigger: {
     trigger: ".sec_1-3",         // 이 섹션이 화면에 등장하면 애니메이션 시작
     start: "top 10%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
@@ -667,21 +645,21 @@ let tl_17 = gsap.timeline({
 
 });
 
-tl_17.to(".create_23", {
+tl_16.to(".create_23", {
   y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
   duration: 1.2,     // 각 요소의 애니메이션 지속 시간: 1.2초
   stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
   opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
 })
 
-.to(".create_21", {
+tl_16.to(".create_21", {
   y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
   duration: 0.6,     // 각 요소의 애니메이션 지속 시간: 1.2초
   stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
   opacity: 1
 }, '-=.5')
 
-.to(".create_22", {
+tl_16.to(".create_22", {
   y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
   duration: 0.8,     // 각 요소의 애니메이션 지속 시간: 1.2초
   // stagger: 0.5,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
@@ -689,7 +667,7 @@ tl_17.to(".create_23", {
 }, '>.2');
 
 // 메인 애니메이션 - 왼쪽
-let tl_18 = gsap.timeline({
+let tl_17 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec_1-3",         // 이 섹션이 화면에 등장하면 애니메이션 시작
     start: "top 20%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
@@ -710,20 +688,22 @@ tl_17.to(".create_24", {
   opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
 })
 
-.to(".create_25", {
+tl_17.to(".create_25", {
   x: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
   duration: 0.6,     // 각 요소의 애니메이션 지속 시간: 1.2초
   stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
   opacity: 1
 }, '-=.5')
 
-.to(".create_26", {
+tl_17.to(".create_26", {
   x: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
   duration: 0.8,     // 각 요소의 애니메이션 지속 시간: 1.2초
   stagger: 0.5,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
   opacity: 1
-}, '>.2');//sec-1-7  애니메이션 
-let tl_16 = gsap.timeline({
+}, '>.2');
+
+//sec-1-7  애니메이션 
+let tl_18 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec_1-7",       
     start: "top 20%",      
@@ -736,26 +716,48 @@ let tl_16 = gsap.timeline({
   }
 });
 
-tl_16.to(".create_44", {
+tl_18.to(".create_44", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
 });
 
-tl_16.to(".create_45", {
+tl_18.to(".create_45", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.5");
 
-tl_16.to(".create_46", {
+tl_18.to(".create_46", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.5");
 
-tl_16.to(".create_47", {
+tl_18.to(".create_47", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.5");
+
+// 워치 픽업 애니메이션
+let tl_19 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-1-9",         // 이 섹션이 화면에 등장하면 애니메이션 시작
+    start: "top 60%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
+    toggleActions: "play none none none" ,
+    // markers: true 
+  },
+  
+  defaults: {
+    ease: "power4.out" // 애니메이션 속도 곡선: 느리게 시작 → 빠르게 → 부드럽게 감속
+  }
+});
+
+tl_19.to(".create_20", {
+  y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
+  duration: 1.2,     // 각 요소의 애니메이션 지속 시간: 1.2초
+  stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
+  opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
+});
+// "+=.3"
