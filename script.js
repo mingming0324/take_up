@@ -601,20 +601,18 @@ tl_14.to(".create_41", {
   opacity: 1        
 }, "-=.5");
 
-// 매장 혼잡도 텍스트 애니메이션
+// sec_1-6 매장 혼잡도 텍스트 애니메이션
 let tl_15 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".sec_1-6",         // 이 섹션이 화면에 등장하면 애니메이션 시작
-    start: "top 10%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
+    trigger: ".sec_1-6",     
+    start: "top 10%",      
     toggleActions: "play none none none" ,
-    // └ 스크롤 방향과 관계없이 1번만 재생
-    // markers: true // 화면에 start/end 위치 보이게 함
+    // markers: true 
   },
   
   defaults: {
     ease: "power4.out" // 애니메이션 속도 곡선: 느리게 시작 → 빠르게 → 부드럽게 감속
   }
-
 });
 
 tl_13.to(".create_19", {
@@ -624,3 +622,40 @@ tl_13.to(".create_19", {
   opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
 }, "+=.3");
 
+//sec-1-7  애니메이션 
+let tl_16 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec_1-7",       
+    start: "top 20%",      
+    toggleActions: "play none none none" ,     
+    // markers: true,
+  },
+
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_16.to(".create_44", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+});
+
+tl_16.to(".create_45", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.5");
+
+tl_16.to(".create_46", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.5");
+
+tl_16.to(".create_47", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.5");
