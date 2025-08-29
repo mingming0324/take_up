@@ -446,13 +446,33 @@ let tl_10 = gsap.timeline({
     trigger: ".sec_1-1",       
     start: "top 40%",      
     toggleActions: "play none none none" ,     
-    // markers: true,
+    markers: true,
   },
 
   defaults: {
     ease: "power4.out" 
   }
 });
+tl_10.to(".app-arc-img", {
+  y: -12,            // 위아래
+  rotation: 1.2,     // 살짝 기울기
+  scale: 1,       // 아주 미세한 스케일로 물결 느낌
+  duration: 3,
+  yoyo: true,
+  repeat: -1,
+  ease: "sine.inOut"     
+});
+
+tl_10.to(".create_48", {
+  y: '0%',        
+  duration: 2,  
+  stagger: 0.2,       
+}, "-=3");
+
+tl_10.to(".create_49", { 
+  duration: 2,  
+  opacity: 1 
+}, "-=1.3");
 
 //sec-1-2 어플 시작 애니메이션 
 let tl_11 = gsap.timeline({
@@ -684,7 +704,7 @@ tl_15.to(".create_42", {
 }, '-=.5');
 
 //sec-1-7  마이페이지 애니메이션 
-let tl_18 = gsap.timeline({
+let tl_17 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec_1-7",       
     start: "top 20%",      
@@ -697,25 +717,25 @@ let tl_18 = gsap.timeline({
   }
 });
 
-tl_18.to(".create_44", {
+tl_17.to(".create_44", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
 });
 
-tl_18.to(".create_45", {
+tl_17.to(".create_45", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.5");
 
-tl_18.to(".create_46", {
+tl_17.to(".create_46", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.5");
 
-tl_18.to(".create_47", {
+tl_17.to(".create_47", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
@@ -724,7 +744,7 @@ tl_18.to(".create_47", {
 // sec-1-8 메인 워치 애니메이션
 
 // sec-1-9 워치 픽업 애니메이션
-let tl_19 = gsap.timeline({
+let tl_18 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-1-9",         // 이 섹션이 화면에 등장하면 애니메이션 시작
     start: "top 60%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
@@ -737,7 +757,7 @@ let tl_19 = gsap.timeline({
   }
 });
 
-tl_19.to(".create_20", {
+tl_18.to(".create_20", {
   y: '0%',           // 요소를 Y축으로 0% 위치(원래 자리)까지 이동 (초기에는 translateY(100%) 상태여야 함)
   duration: 1.2,     // 각 요소의 애니메이션 지속 시간: 1.2초
   stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
