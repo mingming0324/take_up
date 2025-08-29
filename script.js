@@ -477,13 +477,14 @@ tl_13.to(".create_18", {
   opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
 });
 
+
 // 매장 혼잡도 텍스트 애니메이션
 let tl_15 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec_1-6",         // 이 섹션이 화면에 등장하면 애니메이션 시작
-    start: "top 40%",          // 섹션의 'top'이 브라우저의 75% 지점에 닿을 때
+    start: "top+=200 center",          // 섹션의 'top'이 중앙에 오되, 200px 더 내려온 후 실행
     toggleActions: "play none none none" ,  // 스크롤 방향과 관계없이 1번만 재생
-    markers: true // 화면에 start/end 위치 보이게 함
+    markers: true
   },
   
   defaults: {
@@ -503,7 +504,7 @@ tl_15.to(".create_42", {
   duration: 0.6,     // 각 요소의 애니메이션 지속 시간: 1.2초
   // stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
   opacity: 1
-}, '-=.5')
+}, '-=.5');
 
 
 // 워치 픽업 애니메이션

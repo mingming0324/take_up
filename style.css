@@ -2695,7 +2695,7 @@ table {
   position: absolute;
   display: flex;
   white-space: nowrap;
-  margin-left: 355px;
+  left: 355px;
   bottom: 176px;
 }
 
