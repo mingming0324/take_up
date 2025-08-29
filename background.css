@@ -1,0 +1,490 @@
+@font-face {
+  font-family: 'Pretendard-bold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-semibold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-medium';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1, h2, h3, h4,
+p, span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ /* 노말라이즈 끝 */
+
+ /* 라이브러리 */
+.border-red {
+  border: 1px solid red;
+}
+
+.border-blue {
+  border: 1px solid blue;
+}
+
+.border-black {
+  border: 1px solid #000;
+}
+
+.border-green {
+  border: 1px solid green;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.con {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1920px;
+}
+
+.img-box>img {
+  width: 100%;
+  display: block;
+}
+
+.text-wrap {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.text-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tag > p {
+  color: #FF4D4D;
+}
+
+.tag-box {
+  border: 2px solid var(--color-main);
+  padding: 4px 11px;
+  border-radius: 3px;
+}
+
+.create_0, .create_17, .create_27, .create_28, .create_29, .create_30, .create_38, .create_39 {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.create_7, .create_25, .create_26, .create_31, .create_32, .create_34, .create_35, .create_36, .create_37,
+.create_40, .create_41, .create_42, .create_43, .create_44, .create_45, .create_46, .create_47  {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.create, .create_1, .create_5, .create_11, .create_12, .create_13, .create_18, .create_20, .create_23, .create_24 {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.create_2, .create_3, .create_4, .create_8, .create_9, .create_10, .create_21, .create_22 {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.create_14, .create_15, .create_16 {
+  opacity: 0;
+}
+
+.timeline_wrap {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+ /* 라이브러리 끝 */
+
+/* 컬러칩 */
+:root {
+    --color-main: #FF4D4D;
+    --color-background: #2E2F34;
+    --color-fff: #FFF;
+    --color-f0: #f0f0f0;
+    --color-111: #111;
+    --color-4B: #4B4B4B;
+    --color-text: #555;
+    --color-84: #848484;
+    --color-B1: #B1B1B1;
+    --color-C0: #C0C0C0;
+    --color-D9: #D9D9D9;
+}
+/* 컬러칩 끝 */
+
+/* 커스텀 */
+html {
+  font-family: 'Pretendard-Regular';
+
+  /* 스크롤바 커스텀 시작 */
+
+
+body::-webkit-scrollbar {
+  width: 3px;
+  height: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 15%;
+  background: var(--color-main);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-D9);
+}
+.swiper-horizontal {
+  touch-action: auto;
+}
+/* 스크롤바 커스텀 끝 */
+}
+
+.sec-2 {
+  height: 1386px;
+  background-color: var(--color-background);
+}
+
+.sec-2 .sec-2_text-wrap {
+  justify-content: center;
+  height: 378px;
+  gap: 28px;
+}
+
+.sec-2 .sec-2_text-wrap .background {
+  color: var(--color-4B);
+}
+.sec-2 .sec-2_text-wrap .sec-2_text-box {
+  gap: 8px;
+}
+
+.sec-2 .sec-2_text-wrap .background_text {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.sec-2 .sec-2_text-wrap .background_title {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--color-main);
+}
+
+
+.top-content {
+  position: relative;
+  width: 1580px;
+  height: auto;
+  margin: 0 auto;
+  background-color: gold;
+  white-space: nowrap;
+}
+
+.top-content > .left-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 770px;
+  height: 847px;
+  background-color: orange;
+}
+
+.top-content > .left-top > .top-box {
+  position: relative;
+  width: 100%;
+  height: 383px;
+  background-color: #F0F0F0;
+  border-radius: 30px;
+}
+
+.top-content > .left-top > .top-box > .top-title {
+  margin-top: 24px;
+  margin-left: 40px;
+}
+
+.top-content > .left-top > .top-box > .top-title > span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #848484;
+}
+
+.top-content > .left-top > .top-box > .top-img {
+  margin-top: 6px;
+  margin-left: 260px;
+  width: 309px;
+  height: auto;
+}
+
+.top-content > .left-top > .top-box > .top-img > img {
+  display: block;
+  width: 100%;
+}
+
+/* 커피전문점 */
+.top-content .top-text-1 {
+  position: absolute;
+  top: 113px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.top-content .top-text-1 > .title {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #FF4D4D;
+}
+
+.top-content .top-text-1 > .title > .sub {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.top-content .top-text-1 > .top-num {
+  display: inline-block;
+  width: auto;
+  margin-top: 14px;
+  /* align-self: flex-start; */
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #FF4D4D;
+}
+
+.top-content .top-text-1 > .top-num > span {
+  font-size: 28px;
+  color: #fff;
+}
+
+.top-content .dot-img-1 {
+  position: absolute;
+  top: 134px;
+  left: 240px;
+  width: 80px;
+  height: auto
+}
+
+.top-content .dot-img-1 > img {
+  display: block;
+  width: 100%;
+}
+
+.top-content .label {
+  display: flex;
+  color: #848484;
+}
+
+/* 편의점 */
+.top-content .store {
+  position: absolute;
+  top: 145px;
+  right: 130px;
+}
+
+.top-content .store > .dot-img {
+  width: 80px;
+  height: auto;
+  margin-top: 6px;
+  margin-right: 16px;
+}
+
+.top-content .store > .dot-img > img {
+  display: block;
+  width: 100%;
+}
+
+.top-content .store > .store-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-content .store > .store-text > .title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.top-content .store > .store-text > .num {
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+/* 치킨전문점 */
+.top-content .chicken {
+  position: absolute;
+  bottom: 70px;
+  right: 150px;
+}
+
+.top-content .chicken > .dot-img {
+  width: 80px;
+  height: auto;
+  margin-top: 6px;
+  margin-right: 16px;
+}
+
+.top-content .chicken > .dot-img > img {
+  display: block;
+  width: 100%;
+}
+
+.top-content .chicken > .chicken-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-content .chicken > .chicken-text > .title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.top-content .chicken > .chicken-text > .num {
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.top-content .top-total {
+  position: absolute;
+  bottom: 23px;
+  right: 64px;
+}
+
+.top-content .top-total > p {
+  font-size: 12px;
+  color: #C0C0C0;
+}
+
+/* bottom 박스 */
+.top-content .bottom-box {
+  position: relative;
+  width: 100%;
+  height: 424px;
+  background-color: #f0f0f0;
+  border-radius: 30px;
+}
+
+.top-content .bottom-box > .bottom-title {
+  margin-top: 24px;
+  margin-left: 40px;
+}
+
+.top-content .bottom-box > .bottom-title > span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #848484;
+}
+.top-content .bottom-box > .bottom-total {
+  margin-top: 6px;
+  margin-left: 40px;
+  margin-bottom: 76px;
+}
+
+.top-content .bottom-box > .bottom-total > p {
+  font-size: 12px;
+  color: #C0C0C0;
+}
+
+.top-content .b-right {
+  position: absolute;
+  top: 24px;
+  right: 84px;
+  display: flex;
+  align-items: center;
+}
+
+.top-content .b-right > .korea {
+  display: flex;
+  align-items: center;
+  width: 8px;
+  height: 8px;
+  background-color: #FF4D4D;
+}
+
+.top-content .b-right > .korea > p {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #FF4D4D;
+}
+
+.top-content .b-right > .global {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  width: 8px;
+  height: 8px;
+  background-color: #C0C0C0;
+}
+
+.top-content .b-right > .global > p {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #C0C0C0;
+}
+
+.bottom-content {
+  width: 602px;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.bottom-content > .left-1 {
+  background-color: orange;
+}
+
+.bottom-content > .left-1 > .k-total > p {
+  margin-bottom: 8px;
+}
+
+.bottom-content > .left-1 > .k-total > .box {
+  width: 50px;
+  height: 174px;
+  border-radius: 6px 6px 0 0;
+  background-color: #FF4D4D;
+}
