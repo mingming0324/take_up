@@ -453,15 +453,12 @@ let tl_10 = gsap.timeline({
     ease: "power4.out" 
   }
 });
-tl_10.to(".app-arc-img", {
-
-});
 
 tl_10.to(".create_48", {
   y: '0%',        
   duration: 2,  
   stagger: 0.2,       
-}, "-=3");
+});
 
 tl_10.to(".create_49", { 
   duration: 2,  
