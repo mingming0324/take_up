@@ -184,7 +184,7 @@ body::-webkit-scrollbar-track {
 
 .sec-2 {
   height: 1386px;
-  background-color: var(--color-background);
+  background-color: #fff;
 }
 
 .sec-2 .sec-2_text-wrap {
@@ -218,8 +218,9 @@ body::-webkit-scrollbar-track {
   width: 1580px;
   height: auto;
   margin: 0 auto;
-  background-color: gold;
   white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-content > .left-top {
@@ -228,7 +229,6 @@ body::-webkit-scrollbar-track {
   justify-content: space-between;
   width: 770px;
   height: 847px;
-  background-color: orange;
 }
 
 .top-content > .left-top > .top-box {
@@ -357,7 +357,7 @@ body::-webkit-scrollbar-track {
 /* 치킨전문점 */
 .top-content .chicken {
   position: absolute;
-  bottom: 70px;
+  bottom: 60px;
   right: 150px;
 }
 
@@ -683,4 +683,148 @@ body::-webkit-scrollbar-track {
   margin-top: 7px;
   font-size: 18px;
   color: #555555;
+}
+
+
+.right-box {
+  position: relative;
+  width: 770px;
+  height: 847px;
+  background-color: #f0f0f0;
+  border-radius: 30px;
+}
+
+.right-box > .right-title {
+  margin-top: 24px;
+  margin-left: 40px;
+}
+
+.right-box > .right-title > span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #848484;
+}
+
+.right-box > .bg-line {
+  position: absolute;
+  top: 236px;
+  left: 67px;
+  width: 636px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.right-box > .bg-line > img {
+  display: block;
+  width: 100%;
+}
+
+.right-box > .gf-bg {
+  position: absolute;
+  top: 215px;
+  left: 67px;
+  width: 637px;
+  height: 391px;
+  margin: 0 auto;
+}
+
+.right-box > .gf-bg > img {
+  display: block;
+  width: 100%;
+}
+
+.right-box > .right-up {
+  position: absolute;
+  top: 188px;
+  left: 67px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: #FF4D4D;
+}
+
+.right-box > .right-up > .up {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.right-box > .num {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-box > .num p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FF4D4D;
+}
+
+.right-box > .num .dot-img {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.right-box > .num .dot-img img {
+  display: block;
+  width: 100%;
+}
+
+.right-box > .num-1 {
+  position: absolute;
+  top: 324px;
+  left: 47px;
+}
+
+.right-box > .num-2 {
+  position: absolute;
+  top: 284px;
+  left: 205px;
+}
+
+.right-box > .num-3 {
+  position: absolute;
+  top: 260px;
+  left: 363px;
+}
+
+.right-box > .num-4 {
+  position: absolute;
+  top: 235px;
+  right: 206px;
+}
+
+.right-box > .num-5 {
+  position: absolute;
+  top: 204px;
+  right: 47px;
+}
+
+.right-box .bottom-since {
+  position: absolute;
+  bottom: 200px;
+  left: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 114px;
+}
+
+.right-box .bottom-since > span {
+  font-size: 18px;
+  color: #555555
+}
+
+.right-box .total {
+  position: absolute;
+  bottom: 120px;
+  right: 62px;
+}
+
+.right-box .total > p {
+  font-size: 12px;
+  color: #C0C0C0;
 }
