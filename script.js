@@ -443,7 +443,7 @@ tl_9.to(".create_15", {
 //sec-1-1 어플 시작 애니메이션 
 let tl_10 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".sec-1-1",       
+    trigger: ".sec_1-1",       
     start: "top 40%",      
     toggleActions: "play none none none" ,     
     // markers: true,
@@ -460,7 +460,7 @@ let tl_11 = gsap.timeline({
     trigger: ".sec_1-2",       
     start: "top 40%",      
     toggleActions: "play none none none" ,     
-    markers: true,
+    // markers: true,
   },
 
   defaults: {
@@ -515,6 +515,91 @@ tl_13.to(".create_18", {
   stagger: 0.2,     
   opacity: 1        
 });
+
+//sec-1-5 오더 페이지 애니메이션 
+let tl_14 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec_1-5",       
+    start: "top 30%",      
+    toggleActions: "play none none none" ,     
+    // markers: true,
+  },
+
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_14.to(".create_31", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "+=.3");
+
+tl_14.to(".create_32", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=1");
+
+tl_14.to(".create_33", {
+  onComplete: () => {
+    // 여기서 .swing 클래스 추가
+    const items = document.querySelectorAll(".link_dot-one");
+
+    items.forEach(el => {
+      el.classList.add("animate__pulse-1"); // 애니메이션 실행
+    });
+  }
+}, "-=.5");
+
+tl_14.to(".create_34", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "+=1.2");
+
+tl_14.to(".create_35", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.2");
+
+tl_14.to(".create_36", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.2");
+
+tl_14.to(".create_37", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.5");
+
+tl_14.to(".create_38", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.2");
+
+tl_14.to(".create_39", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.5");
+
+tl_14.to(".create_40", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.2");
+
+tl_14.to(".create_41", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.5");
 
 // 매장 혼잡도 텍스트 애니메이션
 let tl_15 = gsap.timeline({
