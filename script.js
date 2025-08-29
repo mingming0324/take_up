@@ -446,7 +446,7 @@ let tl_10 = gsap.timeline({
     trigger: ".sec_1-1",       
     start: "top 40%",      
     toggleActions: "play none none none" ,     
-    markers: true,
+    // markers: true,
   },
 
   defaults: {
@@ -554,14 +554,14 @@ tl_16.to(".create_24", {
   duration: 1.2,  
   stagger: 0.2,   
   opacity: 1       
-});
+}, "-=.5");
 
 tl_16.to(".create_25", {
   x: '0%',      
   duration: 0.6,     
   stagger: 0.2,     
   opacity: 1
-});
+}, "-=.3");
 
 tl_16.to(".create_26", {
   x: '0%',        
@@ -596,11 +596,10 @@ tl_13.to(".create_18", {
 let tl_14 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec_1-5",       
-    start: "top 30%",      
+    start: "top 40%",      
     toggleActions: "play none none none" ,     
     // markers: true,
   },
-
   defaults: {
     ease: "power4.out" 
   }
@@ -618,60 +617,85 @@ tl_14.to(".create_32", {
   opacity: 1        
 }, "-=1");
 
-tl_14.to(".create_33", {
-  onComplete: () => {
-    // 여기서 .swing 클래스 추가
-    const items = document.querySelectorAll(".link_dot-one");
-
-    items.forEach(el => {
-      el.classList.add("animate__pulse-1"); // 애니메이션 실행
-    });
+let tl_14_2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".order-chack",       
+    start: "top 90%",      
+    toggleActions: "play none none none" ,     
+    // markers: true,
+  },
+  defaults: {
+    ease: "power4.out" 
   }
+});
+
+tl_14_2.to(".create_34", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+});
+
+tl_14_2.to(".create_35", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+}, "-=.2");
+
+let tl_14_3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".order-cart",       
+    start: "top 80%",      
+    toggleActions: "play none none none" ,     
+    // markers: true,
+  },
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_14_3.to(".create_36", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
+});
+
+tl_14_3.to(".create_37", {
+  x: '0%',        
+  duration: 1.2,   
+  opacity: 1        
 }, "-=.5");
 
-tl_14.to(".create_34", {
-  x: '0%',        
-  duration: 1.2,   
-  opacity: 1        
-}, "+=1.2");
-
-tl_14.to(".create_35", {
+tl_14_3.to(".create_38", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.2");
 
-tl_14.to(".create_36", {
-  x: '0%',        
-  duration: 1.2,   
-  opacity: 1        
-}, "-=.2");
-
-tl_14.to(".create_37", {
+tl_14_3.to(".create_39", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.5");
 
-tl_14.to(".create_38", {
+let tl_14_4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".order-pay",       
+    start: "top 90%",      
+    toggleActions: "play none none none" ,     
+    // markers: true,
+  },
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_14_4.to(".create_40", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
-}, "-=.2");
+});
 
-tl_14.to(".create_39", {
-  x: '0%',        
-  duration: 1.2,   
-  opacity: 1        
-}, "-=.5");
-
-tl_14.to(".create_40", {
-  x: '0%',        
-  duration: 1.2,   
-  opacity: 1        
-}, "-=.2");
-
-tl_14.to(".create_41", {
+tl_14_4.to(".create_41", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
@@ -733,7 +757,7 @@ tl_17.to(".create_46", {
   x: '0%',        
   duration: 1.2,   
   opacity: 1        
-}, "-=.5");
+}, "-=1");
 
 tl_17.to(".create_47", {
   x: '0%',        

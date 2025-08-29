@@ -2411,9 +2411,24 @@ table {
 
 .link_dot-one {
   position: absolute;
-  width: 52px;
+  width: 28px;
   top: 0;
-  left: 908px;
+  left: 920px;
+  height: 28px;
+  width: 28px;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+  0% {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
+  100% {box-shadow: 0 0 0px 30px rgba(255, 255, 255, 0);}
 }
 
 .order-chack {
@@ -2573,25 +2588,6 @@ table {
   z-index: -1;
 }
 
-.animate__pulse-1 {
-  transform-origin: bottom center;          /* 꼭대기 축으로 흔들림 */
-  animation: pulse_2 1s ease-in-out forwards;
-  animation-iteration-count: 2;
-  /* animation: swing 1s ease-in-out both;  both = 시작/끝 상태 유지 */
-}
-
-@keyframes pulse_2 {
-  /* 
-  animate__swing
-  20%  { transform: rotate3d(0, 0, 1, 15deg); }
-  40%  { transform: rotate3d(0, 0, 1, -10deg); }
-  60%  { transform: rotate3d(0, 0, 1, 5deg); }
-  80%  { transform: rotate3d(0, 0, 1, -5deg); }
-  100% { transform: rotate3d(0, 0, 1, 0deg); } */
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.4); } /* 중간에 살짝 커짐 */
-  100% { transform: scale(1); }    /* 다시 원래 크기 */
-}
 /* ---- 상세페이지 끝 ---- */
 
 
