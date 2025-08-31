@@ -111,12 +111,13 @@ a {
 }
 
 .create_7, .create_25, .create_26, .create_31, .create_32, .create_34, .create_35, .create_36, .create_37,
-.create_40, .create_41, .create_42, .create_43, .create_44, .create_45, .create_46, .create_47  {
+.create_40, .create_41, .create_42, .create_43, .create_44, .create_45, .create_46, .create_47 {
   transform: translateX(-100%);
   opacity: 0;
 }
 
-.create, .create_1, .create_5, .create_11, .create_12, .create_13, .create_18, .create_20, .create_23, .create_24 {
+.create, .create_1, .create_5, .create_11, .create_12, .create_13, .create_18, .create_20, .create_23, .create_24,
+.create_48, .create_49, .create_50, .create_51 {
   transform: translateY(100%);
   opacity: 0;
 }
@@ -578,7 +579,7 @@ body::-webkit-scrollbar-track {
   text-align: center;
 }
 
-.bottom-content .left-gf > .k-total > p {
+.bottom-content .left-gf .k-total p {
   margin-bottom: 4px;
   font-size: 18px;
   color: #FF4D4D;
@@ -589,7 +590,7 @@ body::-webkit-scrollbar-track {
   align-items: flex-end;
 }
 
-.bottom-content .left-gf > .k-total {
+.bottom-content .left-gf .k-total {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -598,7 +599,7 @@ body::-webkit-scrollbar-track {
   margin-right: 12px;
 }
 
-.bottom-content .left-gf > .k-total > .box {
+.bottom-content .left-gf .k-total .box {
   width: 50px;
   height: 174px;
   border-radius: 6px 6px 0 0;
