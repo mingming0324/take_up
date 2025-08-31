@@ -803,7 +803,7 @@ body::-webkit-scrollbar-track {
   color: #848484;
 }
 
-.right-box > .bg-line {
+.right-box .bg-line {
   position: absolute;
   top: 236px;
   left: 67px;
@@ -812,7 +812,7 @@ body::-webkit-scrollbar-track {
   margin: 0 auto;
 }
 
-.right-box > .bg-line > img {
+.right-box .bg-line > img {
   display: block;
   width: 100%;
 }
