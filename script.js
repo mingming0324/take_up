@@ -783,3 +783,16 @@ tl_20.to(".create_51", {
   duration: 1.0,
   opacity: 1,
 }, '-=.5');
+
+tl_20.to(".right-box .bg-line path", {
+  strokeDasharray: 1000,
+  strokeDashoffset: 1000,
+  duration: 0,      // 초기 세팅
+  opacity: 1
+}, '+=0') // 타임라인 안에서 초기화
+
+tl_20.to(".right-box .bg-line path", {
+  strokeDashoffset: 0,
+  duration: 3.2,
+  ease: "power4.out"
+});

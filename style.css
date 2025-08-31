@@ -825,11 +825,11 @@ body::-webkit-scrollbar-track {
   animation: drawLine 2.5s ease-out forwards;
 }
 
-@keyframes drawLine {
+/* @keyframes drawLine {
   to {
-    stroke-dashoffset: 0;    /* 라인 끝까지 그려짐 */
+    stroke-dashoffset: 0;
   }
-}
+} */
 
 /* .right-box .bg-line > img {
   display: block;
