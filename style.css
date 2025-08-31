@@ -116,7 +116,7 @@ a {
   opacity: 0;
 }
 
-.create, .create_1, .create_5, .create_11, .create_12, .create_13, .create_18, .create_20, .create_23, .create_24 {
+.create, .create_1, .create_5, .create_11, .create_12, .create_13, .create_18, .create_20, .create_23, .create_24, .create_52 {
   transform: translateY(100%);
   opacity: 0;
 }
@@ -126,7 +126,11 @@ a {
   opacity: 0;
 }
 
-.create_48, .create_49 {
+.create_48 {
+  transform: translateY(100%);
+}
+
+.create_50, .create_51 {
   clip-path: inset(0 100% 0 0);
   will-change: clip-path;
 }

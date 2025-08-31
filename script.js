@@ -760,7 +760,7 @@ tl_17.to(".create_47", {
 let tl_19 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec-1-8",       
-    start: "top 50%",      
+    start: "top 30%",      
     toggleActions: "play none none none" ,     
     // markers: true,
   },
@@ -770,13 +770,13 @@ let tl_19 = gsap.timeline({
   }
 });
 
-tl_19.to(".create_48", {
+tl_19.to(".create_50", {
   clipPath: "inset(0% 0% 0% 0%)",
   duration: 4,   
   opacity: 1        
 });
 
-tl_19.to(".create_49", {
+tl_19.to(".create_51", {
   clipPath: "inset(0% 0% 0% 0%)",
   duration: .3,   
   opacity: 1        
@@ -803,3 +803,23 @@ tl_18.to(".create_20", {
   opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
 });
 // "+=.3"
+
+// sec-1-8 마무리리 애니메이션
+let tl_20 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-1-10",       
+    start: "top 30%",      
+    toggleActions: "play none none none" ,     
+    // markers: true,
+  },
+
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_20.to(".create_52", {
+  y: '0%',        
+  duration: 2,   
+  opacity: 1        
+});
