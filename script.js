@@ -757,6 +757,30 @@ tl_17.to(".create_47", {
 }, "-=.5");
 
 // sec-1-8 메인 워치 애니메이션
+let tl_19 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-1-8",       
+    start: "top 50%",      
+    toggleActions: "play none none none" ,     
+    // markers: true,
+  },
+
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_19.to(".create_48", {
+  clipPath: "inset(0% 0% 0% 0%)",
+  duration: 4,   
+  opacity: 1        
+});
+
+tl_19.to(".create_49", {
+  clipPath: "inset(0% 0% 0% 0%)",
+  duration: .3,   
+  opacity: 1        
+}, "-=3.6");
 
 // sec-1-9 워치 픽업 애니메이션
 let tl_18 = gsap.timeline({

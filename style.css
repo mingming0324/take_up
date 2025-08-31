@@ -126,8 +126,9 @@ a {
   opacity: 0;
 }
 
-.create_48 {
-  transform: translateY(100%);
+.create_48, .create_49 {
+  clip-path: inset(0 100% 0 0);
+  will-change: clip-path;
 }
 
 .create_14, .create_15, .create_16, .create_49 {
@@ -1509,7 +1510,7 @@ table {
     }
 
     .compo_item:hover {
-      background-color: rgba(130, 0, 40, .7);
+      background-color: rgba(128, 0, 0, .3);
     }
 
     /* .compo_item:hover span {
@@ -2915,6 +2916,7 @@ animation-iteration-count: infinite;
       height: 1083px;
       background-color: var(--color-background);
       position: relative;
+      overflow: hidden;
     }
     .watch_back-img {
       height: 100%;
@@ -2923,7 +2925,7 @@ animation-iteration-count: infinite;
     }
     .watch_top-line {
       position: absolute;
-      top: 650px;
+      top: 650.5px;
       left: 840px;
       z-index: 1;
       width: 190px;
