@@ -17,17 +17,18 @@ let main = gsap.timeline({
   }
 });
 
-main.to(".create_16", {
-  duration: 1.2,      
-  opacity: 1     
-}, "+=1");
+// main.to(".create_16", {
+//   duration: 1.2,      
+//   opacity: 1     
+// }, "+=1");
 
 main.to(".create_17", {
-  x: '0%',          
-  duration: 1.2,    
-  stagger: 0.2,    
-  opacity: 1     
-}, "-=.7");
+  x: 0,
+  y: 0,
+  opacity: 1,
+  duration: 1.5,
+  clipPath: "inset(0% 0% 0% 0%)",
+}, "+=.5");
 
 
 // sec-1 overview 텍스트 애니메이션
