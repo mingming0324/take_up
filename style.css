@@ -116,9 +116,14 @@ a {
   opacity: 0;
 }
 
-.create, .create_1, .create_5, .create_11, .create_12, .create_13, .create_18, .create_20, .create_23, .create_24,
+.create, .create_1, .create_5, .create_11, .create_12, .create_13, .create_18, .create_20, .create_23,
 .create_48, .create_49, .create_50, .create_51 {
   transform: translateY(100%);
+  opacity: 0;
+}
+
+.create_24 {
+  transform: translateY(30%);
   opacity: 0;
 }
 
@@ -2563,7 +2568,6 @@ table {
 
 .main-text-box-2 > .main-tag {
   display: inline-block;
-
 }
 
 .main-text-box-2 > .main-text {

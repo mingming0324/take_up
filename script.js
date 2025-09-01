@@ -496,9 +496,9 @@ tl_11.to(".create_30", {
 // sec_1-3 메인 애니메이션 - 오른쪽
 let tl_16= gsap.timeline({
   scrollTrigger: {
-    trigger: ".sec_1-3",       
-    start: "top 10%",      
-    toggleActions: "play none none none" , 
+    trigger: ".sec_1-3",
+    start: "top 10%",
+    toggleActions: "play none none none" ,
     // markers: true 
   },
   
@@ -530,7 +530,7 @@ tl_16.to(".create_22", {
 
 // 메인 애니메이션 - 왼쪽
 tl_16.to(".create_24", {
-  y: '0%',     
+  y: '30',     
   duration: 1.2,  
   stagger: 0.2,   
   opacity: 1       
