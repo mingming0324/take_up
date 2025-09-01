@@ -105,19 +105,19 @@ a {
   border-radius: 3px;
 }
 
-.create_0, .create_27, .create_28, .create_29, .create_30, .create_38, .create_39 {
+.create_0, .create_27, .create_28, .create_29, .create_30, .create_38 {
   transform: translateX(100%);
   opacity: 0;
 }
 
-.create_7, .create_25, .create_26, .create_31, .create_32, .create_34, .create_35, .create_36, .create_37,
-.create_40, .create_41, .create_42, .create_43, .create_44, .create_45, .create_46, .create_47 {
+.create_7, .create_25, .create_31, .create_34, .create_36,
+.create_40, .create_42, .create_44, .create_45, .create_46, .create_47 {
   transform: translateX(-100%);
   opacity: 0;
 }
 
-.create, .create_1, .create_5, .create_11, .create_12, .create_13, .create_18, .create_20, .create_23,
-.create_48, .create_49, .create_50, .create_51, .create_52 {
+.create, .create_1, .create_5, .create_11, .create_12, .create_13, .create_18, .create_20, .create_23, .create_32, .create_35,
+.create_37, .create_39, .create_41, .create_43,.create_48, .create_49, .create_50, .create_51, .create_52 {
   transform: translateY(100%);
   opacity: 0;
 }
@@ -127,13 +127,13 @@ a {
   opacity: 0;
 }
 
-.create_2, .create_3, .create_4, .create_8, .create_9, .create_10, .create_21, .create_22 {
+.create_2, .create_3, .create_4, .create_8, .create_9, .create_10, .create_21, .create_22, .create_26 {
   transform: translateY(-100%);
   opacity: 0;
 }
 
 .create_17 {
-  transform: translate3d(100%, -100%, 0); /* 좌상단 바깥 */
+  transform: translate3d(100%, -100%, 0); 
   opacity: 0;
   will-change: clip-path;
 }
@@ -150,7 +150,7 @@ a {
   will-change: clip-path;
 }
 
-.create_14, .create_15, .create_56 {
+.create_14, .create_15, .create_56, .create_60 {
   opacity: 0;
 }
 
@@ -2422,8 +2422,8 @@ animation-iteration-count: infinite;
   height: 1600px;
   border: 2px solid var(--color-main);
   border-radius: 42%;
-  -webkit-transform-origin: 50% 45%;
-  transform-origin: 50% 48%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 
 -webkit-animation: drift 4s infinite linear;
   animation: drift 4s infinite linear;

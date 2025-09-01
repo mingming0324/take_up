@@ -22,15 +22,20 @@ let main = gsap.timeline({
 //   opacity: 1     
 // }, "+=1");
 
-main.to(".create_17", {
-  x: 0,
-  y: 0,
-  opacity: 1,
-  duration: 1.5,
-  clipPath: "inset(0% 0% 0% 0%)",
-}, "+=.5");
 
+  main.to(".create_17", {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    duration: 1.5,
+    clipPath: "inset(0% 0% 0% 0%)",
+  });
 
+  main.to(".create_60", {
+    opacity: 1,
+    duration: 2,
+  }, "-=.8");
+  
 // sec-1 overview 텍스트 애니메이션
 // GSAP 타임라인 생성: 모든 애니메이션에 기본적으로 ease를 "power4.out"으로 설정
 let tl = gsap.timeline({
@@ -552,7 +557,7 @@ tl_16.to(".create_23", {
 })
 
 tl_16.to(".create_21", {
-  y: '0%',          
+  y: '0',          
   duration: 0.6,    
   stagger: 0.2,  
   opacity: 1
@@ -566,7 +571,7 @@ tl_16.to(".create_22", {
 
 // 메인 애니메이션 - 왼쪽
 tl_16.to(".create_24", {
-  y: '30',     
+  y: '0',     
   duration: 1.2,  
   stagger: 0.2,   
   opacity: 1       
@@ -580,7 +585,7 @@ tl_16.to(".create_25", {
 }, "-=.3");
 
 tl_16.to(".create_26", {
-  x: '0%',        
+  y: '0',
   duration: 0.8,   
   stagger: 0.5,   
   opacity: 1
@@ -628,7 +633,7 @@ tl_14.to(".create_31", {
 }, "+=.3");
 
 tl_14.to(".create_32", {
-  x: '0%',        
+  y: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=1");
@@ -652,7 +657,7 @@ tl_14_2.to(".create_34", {
 });
 
 tl_14_2.to(".create_35", {
-  x: '0%',        
+  y: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.2");
@@ -676,7 +681,7 @@ tl_14_3.to(".create_36", {
 });
 
 tl_14_3.to(".create_37", {
-  x: '0%',        
+  y: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.5");
@@ -688,7 +693,7 @@ tl_14_3.to(".create_38", {
 }, "-=.2");
 
 tl_14_3.to(".create_39", {
-  x: '0%',        
+  y: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.5");
@@ -712,7 +717,7 @@ tl_14_4.to(".create_40", {
 });
 
 tl_14_4.to(".create_41", {
-  x: '0%',        
+  y: '0%',        
   duration: 1.2,   
   opacity: 1        
 }, "-=.5");
@@ -738,7 +743,7 @@ tl_15.to(".create_42", {
 })
 
 .to(".create_43", {
-  x: '0%',        
+  y: '0%',        
   duration: 0.6,    
   opacity: 1
 }, '-=.5');
@@ -832,7 +837,7 @@ tl_18.to(".create_20", {
 let tl_21 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sec_1-10",       
-    start: "top 50%",      
+    start: "top 80%",      
     toggleActions: "play none none none" ,     
     // markers: true,
   },
@@ -846,4 +851,4 @@ tl_21.to(".create_52", {
   y: '0%',        
   duration: 2,   
   opacity: 1        
-}, "+=.5");
+}, "+=1");
