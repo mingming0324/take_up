@@ -823,4 +823,4 @@ tl_20.to(".create_52", {
   y: '0%',        
   duration: 2,   
   opacity: 1        
-});
+}, "+=.5");
