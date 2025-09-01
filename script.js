@@ -56,30 +56,54 @@ tl.to(".create", {
 });
 
 // sec-2 background 애니메이션
-let alreadyPlayed = false; 
-const videos = document.querySelectorAll(".sec-2 video"); 
-
-let tl_1 = gsap.timeline({
+// 백그라운드 : 왼쪽 아래 상자 애니메이션
+let tl_20 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".sec-2",       
-    start: "top 15%",      
-    toggleActions: "play none none none" ,     
-    // markers: true,
-    onEnter: () => {   // ScrollTrigger가 ".sec-2" 섹션에 진입했을 때 실행되는 함수
-      if (alreadyPlayed) return;  // 이미 재생한 적이 있으면 함수 종료 → 여러 번 재생되지 않게 막음
-      alreadyPlayed = true;    // 처음 진입했음을 기록 → 이후엔 다시 실행되지 않도록 설정
-
-      videos.forEach(v => {  // .sec-2 안의 모든 <video> 요소를 하나씩 순회
-        v.currentTime = 0;  // 비디오 시작 위치를 항상 0초(처음)으로 맞춤
-        v.muted = true;     // 모바일/브라우저 자동재생 정책 때문에 무음으로 설정해야 재생됨
-    
-        v.play().catch(err => {    // video.play() 실행 → 실패할 경우(브라우저 정책 등) 에러를 잡음
-          console.log("재생 실패:", err);   // 실패 이유를 콘솔에 출력 (디버깅 용도)
-        });
-      });
-    }
-}
+    trigger: ".sec-2",
+    start: "top 10%",
+    toggleActions: "play none none none" ,
+    // markers: true 
+  },
+  
+  defaults: {
+    ease: "power4.out"
+  }
 });
+
+tl_20.to(".create_48", {
+  y: '0%',
+  duration: 1.0,
+  opacity: 1,
+});
+
+tl_20.to(".create_49", {
+  y: '0%',
+  duration: 1.0,
+  opacity: 1,
+}, '-=.8');
+
+tl_20.to(".create_50", {
+  y: '0%',
+  duration: 1.0,
+  opacity: 1,
+}, '-=.8');
+
+tl_20.to(".create_51", {
+  y: '0%',
+  duration: 1.0,
+  opacity: 1,
+}, '-=.8');
+
+// 오른쪽 상자 라인 애니메이션
+tl_20.fromTo('.right-box .bg-line path', {
+  strokeDasharray: 1000,
+  strokeDashoffset: 1000,
+  opacity: 1
+}, {
+  strokeDashoffset: 0, 
+  duration: 3.2, 
+  ease: "power4.out" 
+}, "-=.6");
 
 // sec-3 desk-re 텍스트 애니메이션
 let tl_2 = gsap.timeline({
@@ -455,13 +479,13 @@ let tl_10 = gsap.timeline({
   }
 });
 
-tl_10.to(".create_48", {
+tl_10.to(".create_55", {
   y: '0%',        
   duration: 2,  
   stagger: 0.2,       
 });
 
-tl_10.to(".create_49", { 
+tl_10.to(".create_56", { 
   duration: 2,  
   opacity: 1 
 }, "-=1.3");
@@ -508,9 +532,9 @@ tl_11.to(".create_30", {
 // sec_1-3 메인 애니메이션 - 오른쪽
 let tl_16= gsap.timeline({
   scrollTrigger: {
-    trigger: ".sec_1-3",       
-    start: "top 10%",      
-    toggleActions: "play none none none" , 
+    trigger: ".sec_1-3",
+    start: "top 10%",
+    toggleActions: "play none none none" ,
     // markers: true 
   },
   
@@ -542,7 +566,7 @@ tl_16.to(".create_22", {
 
 // 메인 애니메이션 - 왼쪽
 tl_16.to(".create_24", {
-  y: '0%',     
+  y: '30',     
   duration: 1.2,  
   stagger: 0.2,   
   opacity: 1       
@@ -771,13 +795,13 @@ let tl_19 = gsap.timeline({
   }
 });
 
-tl_19.to(".create_50", {
+tl_19.to(".create_53", {
   clipPath: "inset(0% 0% 0% 0%)",
   duration: 4,   
   opacity: 1        
 });
 
-tl_19.to(".create_51", {
+tl_19.to(".create_54", {
   clipPath: "inset(0% 0% 0% 0%)",
   duration: .3,   
   opacity: 1        
@@ -803,13 +827,12 @@ tl_18.to(".create_20", {
   stagger: 0.2,      // 각 요소의 애니메이션을 0.2초 간격으로 순차 실행
   opacity: 1         // 불투명도를 1로 설정 (초기값은 opacity: 0 이어야 자연스러움)
 });
-// "+=.3"
 
 // sec-1-8 마무리리 애니메이션
-let tl_20 = gsap.timeline({
+let tl_21 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".sec-1-10",       
-    start: "top 30%",      
+    trigger: ".sec_1-10",       
+    start: "top 50%",      
     toggleActions: "play none none none" ,     
     // markers: true,
   },
@@ -819,7 +842,7 @@ let tl_20 = gsap.timeline({
   }
 });
 
-tl_20.to(".create_52", {
+tl_21.to(".create_52", {
   y: '0%',        
   duration: 2,   
   opacity: 1        
